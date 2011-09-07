@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="7bf701ec-c1b5-4342-8332-d7bc249e8ac6" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>false</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8090/ChartDataService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ChartDataService.xsd" MetadataType="Schema" ID="ca0b1b41-eb8b-4b1b-b36c-ead4a9d456f7" SourceId="1" SourceUrl="http://localhost:8090/ChartDataService.svc?xsd=xsd3" />
+    <MetadataFile FileName="ChartDataService1.xsd" MetadataType="Schema" ID="60f6a8ad-1ba3-4652-bffb-7c0b801e52a3" SourceId="1" SourceUrl="http://localhost:8090/ChartDataService.svc?xsd=xsd0" />
+    <MetadataFile FileName="ChartDataService.disco" MetadataType="Disco" ID="0b409641-f941-4196-8e2a-1f85fb2f0a7b" SourceId="1" SourceUrl="http://localhost:8090/ChartDataService.svc?disco" />
+    <MetadataFile FileName="ChartDataService.wsdl" MetadataType="Wsdl" ID="d0c813ac-09bf-455b-b1f8-43b6ff268b1d" SourceId="1" SourceUrl="http://localhost:8090/ChartDataService.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="ChartDataService2.xsd" MetadataType="Schema" ID="eebbb051-43e8-44f8-990d-c86c52db6923" SourceId="1" SourceUrl="http://localhost:8090/ChartDataService.svc?xsd=xsd4" />
+    <MetadataFile FileName="ChartDataService3.xsd" MetadataType="Schema" ID="33021782-e2be-417d-a224-e151affa6d62" SourceId="1" SourceUrl="http://localhost:8090/ChartDataService.svc?xsd=xsd5" />
+    <MetadataFile FileName="ChartDataService5.xsd" MetadataType="Schema" ID="9220b35b-1540-4c10-a1d1-80264d1861b5" SourceId="1" SourceUrl="http://localhost:8090/ChartDataService.svc?xsd=xsd1" />
+    <MetadataFile FileName="ChartDataService1.wsdl" MetadataType="Wsdl" ID="2ba0d119-cd32-4c14-8c8e-a80d550e9971" SourceId="1" SourceUrl="http://localhost:8090/ChartDataService.svc?wsdl" />
+    <MetadataFile FileName="ChartDataService6.xsd" MetadataType="Schema" ID="d6697755-389a-4613-abde-efd4400c7636" SourceId="1" SourceUrl="http://localhost:8090/ChartDataService.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

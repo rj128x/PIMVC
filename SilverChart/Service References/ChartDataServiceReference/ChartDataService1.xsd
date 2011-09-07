@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:8090/ChartDataService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/PILib.Chart" />
+  <xs:import schemaLocation="http://localhost:8090/ChartDataService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/PILib.PBR" />
+  <xs:import schemaLocation="http://localhost:8090/ChartDataService.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/PILib.PrognozNB" />
+  <xs:import schemaLocation="http://localhost:8090/ChartDataService.svc?xsd=xsd5" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:element name="getChartData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="fileNameData" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="fileNameProperties" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getChartDataResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/PILib.Chart" minOccurs="0" name="getChartDataResult" nillable="true" type="q1:ChartAnswer" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getRynokChart">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="dateStart" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="dateEnd" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="interval" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="recordedData" type="xs:boolean" />
+        <xs:element minOccurs="0" name="fileNameProperties" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getRynokChartResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/PILib.Chart" minOccurs="0" name="getRynokChartResult" nillable="true" type="q2:ChartAnswer" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getGraphVyrabData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="dateStart" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="dateEnd" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="fileNameProperties" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getGraphVyrabDataResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/PILib.PBR" minOccurs="0" name="getGraphVyrabDataResult" nillable="true" type="q3:GraphVyrabAnswer" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getPrognozNBFakt">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="dateFakt" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="now" type="xs:boolean" />
+        <xs:element minOccurs="0" name="hourStart" type="xs:int" />
+        <xs:element minOccurs="0" name="minuteStart" type="xs:int" />
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/PILib.PrognozNB" minOccurs="0" name="prognozType" type="q4:PrognozDataType" />
+        <xs:element xmlns:q5="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="userPBR" nillable="true" type="q5:ArrayOfKeyValueOfdateTimedouble" />
+        <xs:element minOccurs="0" name="sutkiCount" type="xs:int" />
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/PILib.PrognozNB" minOccurs="0" name="rashodCalcMode" type="q6:PrognozRashodCalcType" />
+        <xs:element minOccurs="0" name="faktMinutes" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getPrognozNBFaktResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/PILib.PrognozNB" minOccurs="0" name="getPrognozNBFaktResult" nillable="true" type="q7:PrognozNBAnswer" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

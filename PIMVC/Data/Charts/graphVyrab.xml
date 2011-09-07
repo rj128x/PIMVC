@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ChartProperties>
+	<XAxisType>datetime</XAxisType>
+	<Series>
+		<ChartSerieProperties>
+			<SerieType>stepLine</SerieType>
+			<TagName>gtp1Fakt</TagName>
+			<Title>ГТП1 Факт</Title>
+			<LineWidth>2</LineWidth>
+			<Color>0-0-255</Color>
+			<Marker>false</Marker>
+		</ChartSerieProperties>
+		<ChartSerieProperties>
+			<SerieType>stepLine</SerieType>
+			<TagName>gtp1Plan</TagName>
+			<Title>ГТП1 план</Title>
+			<Color>0-0-255</Color>
+			<LineWidth>1</LineWidth>
+			<Marker>true</Marker>
+		</ChartSerieProperties>
+		
+		<ChartSerieProperties>
+			<SerieType>stepLine</SerieType>
+			<TagName>gtp2Fakt</TagName>
+			<Title>ГТП2 Факт</Title>
+			<LineWidth>2</LineWidth>
+			<Color>0-255-0</Color>
+			<Marker>false</Marker>
+		</ChartSerieProperties>
+		<ChartSerieProperties>
+			<SerieType>stepLine</SerieType>
+			<TagName>gtp2Plan</TagName>
+			<Title>ГТП2 план</Title>
+			<Color>0-255-0</Color>
+			<LineWidth>1</LineWidth>
+			<Marker>true</Marker>
+		</ChartSerieProperties>
+		
+		<ChartSerieProperties>
+			<SerieType>stepLine</SerieType>
+			<TagName>gesFakt</TagName>
+			<Title>ГЭС Факт</Title>
+			<Enabled>false</Enabled>
+			<LineWidth>2</LineWidth>
+			<Color>0-0-0</Color>
+			<Marker>false</Marker>
+		</ChartSerieProperties>
+		<ChartSerieProperties>
+			<SerieType>stepLine</SerieType>
+			<TagName>gesPlan</TagName>
+			<Title>ГЭС план</Title>
+			<Enabled>false</Enabled>
+			<LineWidth>1</LineWidth>
+			<Color>0-0-0</Color>
+			<Marker>true</Marker>
+		</ChartSerieProperties>
+		
+		<ChartSerieProperties>
+			<SerieType>line</SerieType>
+			<TagName>vyrabFakt</TagName>
+			<Title>Выработка Факт</Title>
+			<Enabled>true</Enabled>
+			<LineWidth>2</LineWidth>
+			<YAxisIndex>1</YAxisIndex>
+			<Color>255-0-0</Color>
+			<Marker>false</Marker>
+		</ChartSerieProperties>
+		<ChartSerieProperties>
+			<SerieType>line</SerieType>
+			<TagName>vyrabPlan</TagName>
+			<Title>Выработка план</Title>
+			<Enabled>true</Enabled>
+			<LineWidth>1</LineWidth>
+			<YAxisIndex>1</YAxisIndex>
+			<Color>255-0-0</Color>
+			<Marker>false</Marker>
+		</ChartSerieProperties>
+	</Series>	
+</ChartProperties>

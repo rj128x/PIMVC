@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root xmlns="reportSchema.xsd">
+	<nameReport>График работы</nameReport>
+	<expReplace>
+		<replace key="~gtp1Fakt~"
+					value="('VotGES.SUE.GTP.110.1.In')"/>
+		<replace key="~gtp2Fakt~"
+					value="('VotGES.SUE.GTP.220.1.In')"/>
+		<replace key="~gesFakt~"
+					value="('VotGES.SUE.GTP.GES.1.In')"/>
+		<replace key="~gtp1Plan~"
+					value="('VotGES.SUE.PBR.110.1.In')"/>
+		<replace key="~gtp2Plan~"
+					value="('VotGES.SUE.PBR.220.1.In')"/>
+		<replace key="~gesPlan~"
+					value="('VotGES.SUE.PBR.GES.1.In')"/>
+		<replace key="~gtp1Diff~"
+					value="(~gtp1Fakt~-~gtp1Plan~)"/>
+		<replace key="~gtp2Diff~"
+					value="(~gtp2Fakt~-~gtp2Plan~)"/>
+		<replace key="~gesDiff~"
+					value="(~gesFakt~-~gesPlan~)"/>
+		<replace key="~gtp1DiffMinus~"
+					value="if ~gtp1Diff~&lt;0 then ~gtp1Diff~ else 0"/>
+		<replace key="~gtp1DiffPlus~"
+					value="if ~gtp1Diff~&gt;0 then ~gtp1Diff~ else 0"/>
+		<replace key="~gtp2DiffMinus~"
+					value="if ~gtp2Diff~&lt;0 then ~gtp2Diff~ else 0"/>
+		<replace key="~gtp2DiffPlus~"
+					value="if ~gtp2Diff~&gt;0 then ~gtp2Diff~ else 0"/>
+		<replace key="~gesDiffMinus~"
+					value="if ~gesDiff~&lt;0 then ~gesDiff~ else 0"/>
+		<replace key="~gesDiffPlus~"
+					value="if ~gesDiff~&gt;0 then ~gesDiff~ else 0"/>
+
+		<replace key="~gtp1Fakt30~"
+					value="('VotGES.SUE.GTP.110.30.In')"/>
+		<replace key="~gtp2Fakt30~"
+					value="('VotGES.SUE.GTP.220.30.In')"/>
+		<replace key="~gesFakt30~"
+					value="('VotGES.SUE.GTP.GES.30.In')"/>
+		<replace key="~gtp1Plan30~"
+					value="('VotGES.SUE.PBR.110.30.In')"/>
+		<replace key="~gtp2Plan30~"
+					value="('VotGES.SUE.PBR.220.30.In')"/>
+		<replace key="~gesPlan30~"
+					value="('VotGES.SUE.PBR.GES.30.In')"/>
+		<replace key="~gtp1Diff30~"
+					value="(~gtp1Fakt30~-~gtp1Plan30~)"/>
+		<replace key="~gtp2Diff30~"
+					value="(~gtp2Fakt30~-~gtp2Plan30~)"/>
+		<replace key="~gesDiff30~"
+					value="(~gesFakt30~-~gesPlan30~)"/>
+		<replace key="~gtp1DiffMinus30~"
+					value="if ~gtp1Diff30~&lt;0 then ~gtp1Diff30~ else 0"/>
+		<replace key="~gtp1DiffPlus30~"
+					value="if ~gtp1Diff30~&gt;0 then ~gtp1Diff30~ else 0"/>
+		<replace key="~gtp2DiffMinus30~"
+					value="if ~gtp2Diff30~&lt;0 then ~gtp2Diff30~ else 0"/>
+		<replace key="~gtp2DiffPlus30~"
+					value="if ~gtp2Diff30~&gt;0 then ~gtp2Diff30~ else 0"/>
+		<replace key="~gesDiffMinus30~"
+					value="if ~gesDiff30~&lt;0 then ~gesDiff30~ else 0"/>
+		<replace key="~gesDiffPlus~"
+					value="if ~gesDiff30~&gt;0 then ~gesDiff30~ else 0"/>
+	</expReplace>
+	<items>
+		<item title="ГТП-1 110 кВ"
+				mode="noVal"
+				id="gtp1">
+			<items>
+				<item id="gtp1Fakt"
+						title="Факт"
+						mode="tag"
+						tagName="VotGES.SUE.GTP.110.1.In"
+						calculationBasis="cbTimeWeightedDiscrete"
+						summariesType="asAverage"
+						sampleInterval="1m"
+						sampleType="stRecordedValues" resultMode="avg"  toChart="true"></item>
+				<item id="gtp1Plan"
+						title="План"
+						mode="tag"
+						tagName="VotGES.SUE.PBR.110.1.In"
+						calculationBasis="cbTimeWeightedDiscrete"
+						summariesType="asAverage"
+						sampleInterval="1m"
+						sampleType="stRecordedValues"
+						resultMode="avg"  toChart="true"></item>
+				<item id="gtp1DiffMin"
+						title="Откл Мин"
+						mode="expr"
+						expr="~gtp1Diff~"
+						calculationBasis="cbTimeWeightedDiscrete"
+						summariesType="asMinimum"
+						sampleInterval="1m"
+						sampleType="stRecordedValues"
+						resultMode="min"></item>
+				<item id="gtp1DiffMax"
+						title="Откл Макс"
+						mode="expr"
+						expr="~gtp1Diff~"
+						calculationBasis="cbTimeWeightedDiscrete"
+						summariesType="asMaximum"
+						sampleInterval="1m"
+						sampleType="stRecordedValues"
+						resultMode="max"></item>
+				
+			</items>
+		</item>
+
+		<item title="ГТП-2 220 кВ"
+				mode="noVal"
+				id="gtp2">
+			<items>
+				<item id="gtp2Fakt"
+						title="Факт"
+						mode="tag"
+						tagName="VotGES.SUE.GTP.220.1.In"
+						calculationBasis="cbTimeWeightedDiscrete"
+						summariesType="asAverage"
+						sampleInterval="1m"
+						sampleType="stRecordedValues"
+						resultMode="avg"  toChart="true"></item>
+				<item id="gtp2Plan"
+						title="План"
+						mode="tag"
+						tagName="VotGES.SUE.PBR.220.1.In"
+						calculationBasis="cbTimeWeightedDiscrete"
+						summariesType="asAverage"
+						sampleInterval="1m"
+						sampleType="stRecordedValues"
+						resultMode="avg"  toChart="true"></item>
+				<item id="gtp2DiffMin"
+						title="Откл Мин"
+						mode="expr"
+						expr="~gtp2Diff~"
+						calculationBasis="cbTimeWeightedDiscrete"
+						summariesType="asMinimum"
+						sampleInterval="1m"
+						sampleType="stRecordedValues"
+						resultMode="min"></item>
+				<item id="gtp2DiffMax"
+						title="Откл Макс"
+						mode="expr"
+						expr="~gtp2Diff~"
+						calculationBasis="cbTimeWeightedDiscrete"
+						summariesType="asMaximum"
+						sampleInterval="1m"
+						sampleType="stRecordedValues"
+						resultMode="max"></item>
+			</items>
+		</item>
+
+		<item title="ГЭС"
+				mode="noVal"
+				id="ges">
+			<items>
+				<item id="gesFakt"
+						title="Факт"
+						mode="tag"
+						tagName="VotGES.SUE.GTP.GES.1.In"
+						calculationBasis="cbTimeWeightedDiscrete"
+						summariesType="asAverage"
+						sampleInterval="1m"
+						sampleType="stRecordedValues"
+						resultMode="avg"  toChart="true"></item>
+				<item id="gesPlan"
+						title="План"
+						mode="tag"
+						tagName="VotGES.SUE.PBR.GES.1.In"
+						calculationBasis="cbTimeWeightedDiscrete"
+						summariesType="asAverage"
+						sampleInterval="1m"
+						sampleType="stRecordedValues"
+						resultMode="avg"  toChart="true"></item>
+				<item id="gesDiffMin"
+						title="Откл Мин"
+						mode="expr"
+						expr="~gesDiff~"
+						calculationBasis="cbTimeWeightedDiscrete"
+						summariesType="asMinimum"
+						sampleInterval="1m"
+						sampleType="stRecordedValues"
+						resultMode="min"></item>
+				<item id="gesDiffMax"
+						title="Откл Макс"
+						mode="expr"
+						expr="~gesDiff~"
+						calculationBasis="cbTimeWeightedDiscrete"
+						summariesType="asMaximum"
+						sampleInterval="1m"
+						sampleType="stRecordedValues"
+						resultMode="max"></item>
+				
+			</items>
+		</item>
+	</items>
+</root>

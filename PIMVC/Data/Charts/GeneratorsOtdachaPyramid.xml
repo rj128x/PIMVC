@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ChartProperties>
+	<XAxisType>auto</XAxisType>
+	<Series>
+		<ChartSerieProperties>
+			<SerieType>pyramid</SerieType>
+			<TagName>otdacha</TagName>
+			<Title>Отдача</Title>
+		</ChartSerieProperties>
+	</Series>
+</ChartProperties>

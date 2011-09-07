@@ -1,0 +1,8 @@
+﻿<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" %>
+<head runat="server">
+	<title>1.xls</title>
+	<meta http-equiv="Content-Type" content="application/vnd.ms-excel; charset=utf-8" />
+</head>
+<body>
+	<asp:ContentPlaceHolder ID="MainContent" runat="server" />
+</body>

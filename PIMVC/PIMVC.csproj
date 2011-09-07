@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EA8FC94A-DA81-4826-83AC-BFD1F52B5EE4}</ProjectGuid>
+    <ProjectTypeGuids>{F85E285D-A4E0-4152-9332-AB1D724D3325};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PIMVC</RootNamespace>
+    <AssemblyName>PIMVC</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <SilverlightApplicationList>{28B681E8-6293-4B7D-85E4-6E0E7BEB4857}|..\SilverChart\SilverChart.csproj|ClientBin|False</SilverlightApplicationList>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <FilesToIncludeForPublish>AllFilesInProjectFolder</FilesToIncludeForPublish>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <FilesToIncludeForPublish>AllFilesInProjectFolder</FilesToIncludeForPublish>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="ChartDataService.svc.cs">
+      <DependentUpon>ChartDataService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\GraphyrabController.cs" />
+    <Compile Include="Controllers\RashodHarController.cs" />
+    <Compile Include="Controllers\TestController.cs" />
+    <Compile Include="CustomReportService.svc.cs">
+      <DependentUpon>CustomReportService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PrognozNBModel.cs" />
+    <Compile Include="Controllers\RynokController.cs" />
+    <Compile Include="Controllers\PrognozNBController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\AppHelper.cs" />
+    <Compile Include="Models\GraphVyrab.cs" />
+    <Compile Include="Models\PIReport\ReportChartModel.cs" />
+    <Compile Include="Models\PIReport\ReportModel.cs" />
+    <Compile Include="Models\RashodHarModel.cs" />
+    <Compile Include="Models\RynokModel.cs" />
+    <Compile Include="Models\RynokKvartalModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ChartDataService.svc" />
+    <Content Include="clientaccesspolicy.xml" />
+    <Content Include="ClientBin\SilverChart.xap" />
+    <Content Include="Content\addStyles.css" />
+    <Content Include="Content\images\calendar.gif" />
+    <Content Include="Content\images\item-pointer-mover.gif" />
+    <Content Include="Content\images\item-pointer.gif" />
+    <Content Include="Content\images\logo\inda.gif" />
+    <Content Include="Content\images\logo\inda.jpg" />
+    <Content Include="Content\images\logo\osi.gif" />
+    <Content Include="Content\images\logo\osi.jpg" />
+    <Content Include="Content\images\logo\votges.gif" />
+    <Content Include="Content\images\logo\votges.png" />
+    <Content Include="Content\images\main\1.jpg" />
+    <Content Include="Content\images\main\123.gif" />
+    <Content Include="Content\images\main\123.jpg" />
+    <Content Include="Content\images\main\2.jpg" />
+    <Content Include="Content\images\main\21.jpg" />
+    <Content Include="Content\images\main\3.jpg" />
+    <Content Include="Content\images\main\4.jpg" />
+    <Content Include="Content\images\main\5.jpg" />
+    <Content Include="Content\images\main\6.jpg" />
+    <Content Include="Content\images\main\night.jpg" />
+    <Content Include="Content\images\main\night2.jpg" />
+    <Content Include="Content\images\main\night3.jpg" />
+    <Content Include="Content\images\main\night4.jpg" />
+    <Content Include="Content\images\main\night5.jpg" />
+    <Content Include="Content\images\main\VotGEC_sent_2009.jpg" />
+    <Content Include="Content\images\main\votges.jpg" />
+    <Content Include="Content\images\toggle-collapse-dark.png" />
+    <Content Include="Content\images\toggle-collapse-light.png" />
+    <Content Include="Content\images\toggle-expand-dark.png" />
+    <Content Include="Content\images\toggle-expand-light.png" />
+    <Content Include="Content\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\images\ui-bg_flat_55_fbec88_40x100.png" />
+    <Content Include="Content\images\ui-bg_glass_75_d0e5f5_1x400.png" />
+    <Content Include="Content\images\ui-bg_glass_85_dfeffc_1x400.png" />
+    <Content Include="Content\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\images\ui-bg_gloss-wave_55_5c9ccc_500x100.png" />
+    <Content Include="Content\images\ui-bg_inset-hard_100_87d2ee_1x100.png" />
+    <Content Include="Content\images\ui-bg_inset-hard_100_f5f8f9_1x100.png" />
+    <Content Include="Content\images\ui-bg_inset-hard_100_fcfdfd_1x100.png" />
+    <Content Include="Content\images\ui-icons_217bc0_256x240.png" />
+    <Content Include="Content\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\images\ui-icons_469bdd_256x240.png" />
+    <Content Include="Content\images\ui-icons_6da8d5_256x240.png" />
+    <Content Include="Content\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\images\ui-icons_d8e7f3_256x240.png" />
+    <Content Include="Content\images\ui-icons_f9bd01_256x240.png" />
+    <Content Include="Content\jquery-ui-1.8.10.custom.css" />
+    <Content Include="Content\jquery-ui-1.8.11.custom.css" />
+    <Content Include="Content\jquery.treeTable.css" />
+    <Content Include="Content\mainPage.css" />
+    <Content Include="Content\MainMenu.css" />
+    <Content Include="CustomReportService.svc" />
+    <Content Include="Data\Charts\GeneratorsLine.xml" />
+    <Content Include="Data\Charts\GeneratorsBar.xml" />
+    <Content Include="Data\Charts\Lines.xml" />
+    <Content Include="Data\Charts\Rynok.xml" />
+    <Content Include="Data\Charts\RynokBrief.xml" />
+    <Content Include="Data\Charts\oil.xml" />
+    <Content Include="Data\Charts\GeneratorsASUTPBar.xml" />
+    <Content Include="Data\Charts\GeneratorsASUTP_Radar.xml" />
+    <Content Include="Data\Charts\graphVyrab.xml" />
+    <Content Include="Data\Charts\prognozNBFakt.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Data\Charts\GeneratorsOtdachaPie.xml" />
+    <Content Include="Data\Charts\LinesBar.xml" />
+    <Content Include="Data\Charts\LinesPie.xml" />
+    <Content Include="Data\Charts\GeneratorsRadar.xml" />
+    <Content Include="Data\Charts\GeneratorsOtdachaPyramid.xml" />
+    <Content Include="Data\CustomReport\report.xml" />
+    <Content Include="Data\CustomReport\reportTest.xml" />
+    <Content Include="Data\servers.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Data\GeneratorsASUTP.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Data\Lines.xml" />
+    <Content Include="Data\GeneratorsASKUE.xml" />
+    <Content Include="Data\Rynok.xml" />
+    <Content Include="Data\RynokBrief.xml" />
+    <Content Include="Data\oil.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Data\WaterNK.xml" />
+    <Content Include="Data\testReport.xml" />
+    <Content Include="Data\RynokFakt.xml" />
+    <Content Include="Data\VyrabFakt.xml" />
+    <Content Include="Data\RynokSN.xml" />
+    <Content Include="Data\PrognozNBData.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Data\Peretok.xml" />
+    <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
+    <Content Include="Images\calendar.gif" />
+    <Content Include="Scripts\easyTooltip.js" />
+    <Content Include="Scripts\jquery-1.4.4.min.js" />
+    <Content Include="Scripts\jquery-ui-1.8.10.custom.min.js" />
+    <Content Include="Scripts\jquery.treeTable.min.js" />
+    <Content Include="Scripts\MyScripts\pi.js" />
+    <Content Include="Scripts\MyScripts\rynok.js" />
+    <Content Include="Silverlight.js" />
+    <Content Include="Views\Home\Custom.aspx" />
+    <Content Include="Views\GraphVyrab\Index.aspx" />
+    <Content Include="Views\Home\ActiveX.aspx" />
+    <Content Include="Views\Home\ChartView.ascx" />
+    <Content Include="Views\Home\ReportData.ascx" />
+    <Content Include="Views\Home\ReportExcel.aspx" />
+    <Content Include="Views\Home\RynokBriefChart.ascx" />
+    <Content Include="Views\Home\ReportNull.aspx" />
+    <Content Include="Views\Home\ReportTabs.aspx" />
+    <Content Include="Views\Home\ReportForm.ascx" />
+    <Content Include="Views\Home\ReportString.ascx" />
+    <Content Include="Views\Home\ActiveXGA9.aspx" />
+    <Content Include="Views\Home\ActiveXSchema.aspx" />
+    <Content Include="Views\Home\ReportDataVertNice.ascx" />
+    <Content Include="Views\GraphVyrab\GraphVyrabChart.ascx" />
+    <Content Include="Views\Home\ActiveXTrend.aspx" />
+    <Content Include="Views\Home\CustomReportForm.ascx" />
+    <Content Include="Views\Home\ActiveXIT.aspx" />
+    <Content Include="Views\PrognozNB\Index.aspx" />
+    <Content Include="Views\RashodHar\Index.aspx" />
+    <Content Include="Views\Rynok\IndexKvartal.aspx" />
+    <Content Include="Views\Rynok\IndexMonth.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Content\Site.css" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\MicrosoftAjax.js" />
+    <Content Include="Scripts\MicrosoftAjax.debug.js" />
+    <Content Include="Scripts\MicrosoftMvcAjax.js" />
+    <Content Include="Scripts\MicrosoftMvcAjax.debug.js" />
+    <Content Include="Scripts\MicrosoftMvcValidation.js" />
+    <Content Include="Scripts\MicrosoftMvcValidation.debug.js" />
+    <Content Include="Views\Home\About.aspx" />
+    <Content Include="Views\Home\Index.aspx" />
+    <Content Include="Views\Shared\Error.aspx" />
+    <Content Include="Views\Shared\LogOnUserControl.ascx" />
+    <Content Include="Views\Shared\Site.Master" />
+    <Content Include="Views\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="PDI\" />
+    <Folder Include="TempData\Charts\" />
+    <Folder Include="Views\Shared\Report\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\reportSchema.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Views\Shared\Excel.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Services" />
+    <Reference Include="System.Data.Services.Client" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Activation" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Mvc, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Routing" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PILib\PILib.csproj">
+      <Project>{16875CE6-7D51-41B6-9BC6-1D299C6C6D4C}</Project>
+      <Name>PILib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target> -->
+  <Target Name="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(ProjectDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>8090</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/PIMVC</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

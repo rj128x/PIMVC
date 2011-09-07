@@ -1,0 +1,41 @@
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage<dynamic>" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="TitleContent" runat="server">
+	Мнемосхемы
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
+	<script type="text/javascript">
+		$(document).ready(function () {
+			pi.createObjectDisplay('<%=AppHelper.getPDIPath(Request,"ГА-9 Схема ГА.pdi") %>');
+		});
+
+	</script>
+	<div class="ui-tabs ui-widget ui-widget-content ui-corner-all fullScreen">
+		<ul class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all">
+			<li class="ui-state-default ui-corner-top">
+			<a class='displayOpen' url='<%=AppHelper.getPDIPath(Request,"ГА-9 Схема ГА.pdi") %>'
+				href="#">ГА-9 СХЕМА ГА</a> </li>
+			<li class="ui-state-default ui-corner-top">
+			<a class='displayOpen' url='<%=AppHelper.getPDIPath(Request,"ГА-9 МНУ.pdi") %>'
+				href="#">ГА-9 МНУ</a></li>
+			<li class="ui-state-default ui-corner-top">
+			<a class='displayOpen' url='<%=AppHelper.getPDIPath(Request,"ГА-9 ТВС.pdi") %>'
+				href="#">ГА-9 ТВС</a></li>
+			<li class="ui-state-default ui-corner-top">
+			<a class='displayOpen' url='<%=AppHelper.getPDIPath(Request,"ГА-9 Термоконтроль.pdi") %>'
+				href="#">ГА-9 ТЕРМО</a></li>
+			<li class="ui-state-default ui-corner-top">
+			<a class='displayOpen' url='<%=AppHelper.getPDIPath(Request,"ГА-9 ЭГРК.pdi") %>'
+				href="#">ГА-9 ЭГРК</a></li>			
+			<li class="ui-state-default ui-corner-top">
+			<a class='displayOpen' url='<%=AppHelper.getPDIPath(Request,"ГА-9 Виброконтроль.pdi") %>'
+				href="#">ГА-9 Вибро</a></li>
+		</ul>
+		<div align="center">		
+			<div class='resizable resizeFull' style="width:100%; height:600px; border-color:Blue; border-width:1px; border-style:solid;">
+				<div id='embedObject' style="width:100%;height:100%;"></div>
+			</div>
+		</div>
+	</div>
+	
+</asp:Content>

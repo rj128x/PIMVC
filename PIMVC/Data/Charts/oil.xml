@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ChartProperties>
+	<Series>
+		<ChartSerieProperties>
+			<SerieType>line</SerieType>
+			<TagName>VotGES.GA9.P</TagName>
+			<Title>Отдача P</Title>
+			<XAxisType>dt</XAxisType>
+		</ChartSerieProperties>
+	</Series>
+	<Series>
+		<ChartSerieProperties>
+			<SerieType>line</SerieType>
+			<TagName>vsum</TagName>
+			<Title>Объем</Title>
+			<XAxisType>dt</XAxisType>
+			<YAxisIndex>1</YAxisIndex>
+		</ChartSerieProperties>
+	</Series>
+	<Series>
+		<ChartSerieProperties>
+			<SerieType>line</SerieType>
+			<TagName>VotGES.GA9.MNU.Tкотел</TagName>
+			<Title>T в котле</Title>
+			<XAxisType>dt</XAxisType>
+			<YAxisIndex>2</YAxisIndex>
+			<Enabled>false</Enabled>
+		</ChartSerieProperties>
+	</Series>
+	<Series>
+		<ChartSerieProperties>
+			<SerieType>line</SerieType>
+			<TagName>VotGES.GA9.MNU.Tbak</TagName>
+			<Title>T в баке</Title>
+			<XAxisType>dt</XAxisType>
+			<YAxisIndex>2</YAxisIndex>
+			<Enabled>false</Enabled>
+		</ChartSerieProperties>
+	</Series>
+	<Series>
+		<ChartSerieProperties>
+			<SerieType>line</SerieType>
+			<TagName>VotGES.GA9.MNU.Lkotel</TagName>
+			<Title>L в котле</Title>
+			<XAxisType>dt</XAxisType>
+			<YAxisIndex>3</YAxisIndex>
+			<Enabled>false</Enabled>
+		</ChartSerieProperties>
+	</Series>
+	<Series>
+		<ChartSerieProperties>
+			<SerieType>line</SerieType>
+			<TagName>VotGES.GA9.MNU.Lbak</TagName>
+			<Title>L в баке</Title>
+			<XAxisType>dt</XAxisType>
+			<YAxisIndex>3</YAxisIndex>
+			<Enabled>false</Enabled>
+		</ChartSerieProperties>
+	</Series>
+
+	<Axes>
+		<ChartAxisProperties>
+			<Index>0</Index>
+			<Auto>true</Auto>
+		</ChartAxisProperties>
+		<ChartAxisProperties>
+			<Index>1</Index>
+			<Auto>true</Auto>
+		</ChartAxisProperties>
+		<ChartAxisProperties>
+			<Index>2</Index>
+			<Auto>true</Auto>
+		</ChartAxisProperties>
+		<ChartAxisProperties>
+			<Index>3</Index>
+			<Auto>true</Auto>
+		</ChartAxisProperties>
+	</Axes>
+	
+</ChartProperties>

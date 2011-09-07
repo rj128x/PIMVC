@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root xmlns="reportSchema.xsd">
+	<nameReport>Генераторы (АСУТП)</nameReport>
+	<items>		
+		<item mode="calc"
+				id="P"
+				title="P АСУТП" opened="true"  toChart="true">
+			<items>
+				<item mode="tag"
+						tagName="VOTGES.GA1.P"
+						title="Генератор 1"
+						summariesType="asAverage"
+						calculationBasis ="cbTimeWeighted"/>
+				<item mode="tag"
+						tagName="VOTGES.GA2.P"
+						title="Генератор 2"
+						summariesType="asAverage"
+						calculationBasis ="cbTimeWeighted"/>
+				<item mode="tag"
+						tagName="VOTGES.GA3.P"
+						title="Генератор 3"
+						summariesType="asAverage"
+						calculationBasis ="cbTimeWeighted"/>
+				<item mode="tag"
+						tagName="VOTGES.GA4.P"
+						title="Генератор 4"
+						summariesType="asAverage"
+						calculationBasis ="cbTimeWeighted"/>
+				<item mode="tag"
+						tagName="VOTGES.GA5.P"
+						title="Генератор 5"
+						summariesType="asAverage"
+						calculationBasis ="cbTimeWeighted"/>
+				<item mode="tag"
+						tagName="VOTGES.GA6.P"
+						title="Генератор 6"
+						summariesType="asAverage"
+						calculationBasis ="cbTimeWeighted"/>
+				<item mode="tag"
+						tagName="VOTGES.GA7.P"
+						title="Генератор 7"
+						summariesType="asAverage"
+						calculationBasis ="cbTimeWeighted"/>
+				<item mode="tag"
+						tagName="VOTGES.GA8.P"
+						title="Генератор 8"
+						summariesType="asAverage"
+						calculationBasis ="cbTimeWeighted"/>
+				<item mode="tag"
+						tagName="VOTGES.GA9.P"
+						title="Генератор 9"
+						summariesType="asAverage"
+						calculationBasis ="cbTimeWeighted"/>
+				<item mode="tag"
+						tagName="VOTGES.GA10.P"
+						title="Генератор 10"
+						summariesType="asAverage"
+						calculationBasis ="cbTimeWeighted"/>
+			</items>
+		</item>
+
+		<item mode="calc"
+				id="otdP"
+				title="Отдача P ASUTP" opened="true"  toChart="true">
+			<items>
+				<item mode="expr"
+						expr="if 'VOTGES.GA1.P'>0 then 'VOTGES.GA1.P' else 0"
+						id="ga1"
+						title="Генератор 1"
+						summariesType="asAverage"
+						calculationBasis ="cbTimeWeighted"
+						sampleInterval="10m"
+						sampleType="stInterval" scaleDiv="2" scaleMult="1000"/>
+				<item mode="expr"
+						expr="if 'VOTGES.GA2.P'>0 then 'VOTGES.GA2.P' else 0"
+						id="ga2"
+						title="Генератор 2"
+						summariesType="asAverage"
+						calculationBasis ="cbTimeWeighted"
+						sampleInterval="10m"
+						sampleType="stInterval" scaleDiv="2" scaleMult="1000"/>
+				<item mode="expr"
+						expr="if 'VOTGES.GA3.P'>0 then 'VOTGES.GA3.P' else 0"
+						id="ga3"
+						title="Генератор 3"
+						summariesType="asAverage"
+						calculationBasis ="cbTimeWeighted"
+						sampleInterval="10m"
+						sampleType="stInterval" scaleDiv="2" scaleMult="1000"/>
+				<item mode="expr"
+						expr="if 'VOTGES.GA4.P'>0 then 'VOTGES.GA4.P' else 0"
+						id="ga4"
+						title="Генератор 4"
+						summariesType="asAverage"
+						calculationBasis ="cbTimeWeighted"
+						sampleInterval="10m"
+						sampleType="stInterval" scaleDiv="2" scaleMult="1000"/>
+				<item mode="expr"
+						expr="if 'VOTGES.GA5.P'>0 then 'VOTGES.GA5.P' else 0"
+						id="ga5"
+						title="Генератор 5"
+						summariesType="asAverage"
+						calculationBasis ="cbTimeWeighted"
+						sampleInterval="10m"
+						sampleType="stInterval" scaleDiv="2" scaleMult="1000"/>
+				<item mode="expr"
+						expr="if 'VOTGES.GA6.P'>0 then 'VOTGES.GA6.P' else 0"
+						id="ga6"
+						title="Генератор 6"
+						summariesType="asAverage"
+						calculationBasis ="cbTimeWeighted"
+						sampleInterval="10m"
+						sampleType="stInterval" scaleDiv="2" scaleMult="1000"/>
+				<item mode="expr"
+						expr="if 'VOTGES.GA7.P'>0 then 'VOTGES.GA7.P' else 0"
+						id="ga7"
+						title="Генератор 7"
+						summariesType="asAverage"
+						calculationBasis ="cbTimeWeighted"
+						sampleInterval="10m"
+						sampleType="stInterval" scaleDiv="2" scaleMult="1000"/>
+				<item mode="expr"
+						expr="if 'VOTGES.GA8.P'>0 then 'VOTGES.GA8.P' else 0"
+						id="ga8"
+						title="Генератор 8"
+						summariesType="asAverage"
+						calculationBasis ="cbTimeWeighted"
+						sampleInterval="10m"
+						sampleType="stInterval" scaleDiv="2" scaleMult="1000"/>
+				<item mode="expr"
+						expr="if 'VOTGES.GA9.P'>0 then 'VOTGES.GA9.P' else 0"
+						id="ga9"
+						title="Генератор 9"
+						summariesType="asAverage"
+						calculationBasis ="cbTimeWeighted"
+						sampleInterval="10m"
+						sampleType="stInterval" scaleDiv="2" scaleMult="1000"/>
+				<item mode="expr"
+						expr="if 'VOTGES.GA10.P'>0 then 'VOTGES.GA10.P' else 0"
+						id="ga10"
+						title="Генератор 10"
+						summariesType="asAverage"
+						calculationBasis ="cbTimeWeighted"
+						sampleInterval="10m"
+						sampleType="stInterval" scaleDiv="2" scaleMult="1000"/>
+
+			</items>
+		</item>
+
+		<item mode="calc"
+				id="Q_SK"
+				title="Max Q SK">
+			<items>
+				<item mode="expr"
+						id="ga1_1"
+						expr="if 'VOTGES.GA1.State.SK'=&quot;Вкл.&quot; then 'VOTGES.GA1.Q' else 0"
+						title="Генератор 1"
+						calculationBasis="cbTimeWeightedDiscrete"
+						sampleType="stInterval"
+						sampleInterval="10m"
+						summariesType="asMaximum"
+						resultMode="max"/>
+				<item mode="expr"
+						id="ga2_1"
+						expr="if 'VOTGES.GA2.State.SK'=&quot;Вкл.&quot; then 'VOTGES.GA2.Q' else 0"
+						title="Генератор 2"
+						calculationBasis="cbTimeWeightedDiscrete"
+						sampleType="stInterval"
+						sampleInterval="10m"
+						summariesType="asMaximum"
+						resultMode="max"/>
+				<item mode="expr"
+						id="ga9_1"
+						expr="if 'VOTGES.GA9.State.SK'=&quot;Вкл.&quot; then 'VOTGES.GA9.Q' else 0"
+						title="Генератор 9"
+						calculationBasis="cbTimeWeightedDiscrete"
+						sampleType="stInterval"
+						sampleInterval="10m"
+						summariesType="asMaximum"
+						resultMode="max"/>
+				<item mode="expr"
+						id="ga10_1"
+						expr="if 'VOTGES.GA10.State.SK'=&quot;Вкл.&quot; then 'VOTGES.GA10.Q' else 0"
+						title="Генератор 10"
+						calculationBasis="cbTimeWeightedDiscrete"
+						sampleType="stInterval"
+						sampleInterval="10m"
+						summariesType="asMaximum"
+						resultMode="max"/>
+			</items>
+		</item>
+
+		<item mode="calc"
+				id="P_SK"
+				title="Max P SK">
+			<items>
+				<item mode="expr"
+						id="ga1_2"
+						expr="if 'VOTGES.GA1.State.SK'=&quot;Вкл.&quot; then 'VOTGES.GA1.P'*(-1) else 0"
+						title="Генератор 1"
+						calculationBasis="cbTimeWeightedDiscrete"
+						sampleType="stInterval"
+						sampleInterval="10m"
+						summariesType="asMaximum"
+						resultMode="max"/>
+				<item mode="expr"
+						id="ga2_2"
+						expr="if 'VOTGES.GA2.State.SK'=&quot;Вкл.&quot; then 'VOTGES.GA2.P'*(-1) else 0"
+						title="Генератор 2"
+						calculationBasis="cbTimeWeightedDiscrete"
+						sampleType="stInterval"
+						sampleInterval="10m"
+						summariesType="asMaximum"
+						resultMode="max"/>
+				<item mode="expr"
+						id="ga9_2"
+						expr="if 'VOTGES.GA9.State.SK'=&quot;Вкл.&quot; then 'VOTGES.GA9.P'*(-1) else 0"
+						title="Генератор 9"
+						calculationBasis="cbTimeWeightedDiscrete"
+						sampleType="stInterval"
+						sampleInterval="10m"
+						summariesType="asMaximum"
+						resultMode="max"/>
+				<item mode="expr"
+						id="ga10_2"
+						expr="if 'VOTGES.GA10.State.SK'=&quot;Вкл.&quot; then 'VOTGES.GA10.P'*(-1) else 0"
+						title="Генератор 10"
+						calculationBasis="cbTimeWeightedDiscrete"
+						sampleType="stInterval"
+						sampleInterval="10m"
+						summariesType="asMaximum"
+						resultMode="max"/>
+			</items>
+		</item>
+	</items>
+</root>

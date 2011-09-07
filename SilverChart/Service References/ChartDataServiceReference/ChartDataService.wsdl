@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="/Imports">
+      <xsd:import schemaLocation="http://localhost:8090/ChartDataService.svc?xsd=xsd0" />
+      <xsd:import schemaLocation="http://localhost:8090/ChartDataService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:8090/ChartDataService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/PILib.Chart" />
+      <xsd:import schemaLocation="http://localhost:8090/ChartDataService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/PILib.PBR" />
+      <xsd:import schemaLocation="http://localhost:8090/ChartDataService.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/PILib.PrognozNB" />
+      <xsd:import schemaLocation="http://localhost:8090/ChartDataService.svc?xsd=xsd5" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ChartDataService_getChartData_InputMessage">
+    <wsdl:part name="parameters" element="getChartData" />
+  </wsdl:message>
+  <wsdl:message name="ChartDataService_getChartData_OutputMessage">
+    <wsdl:part name="parameters" element="getChartDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="ChartDataService_getRynokChart_InputMessage">
+    <wsdl:part name="parameters" element="getRynokChart" />
+  </wsdl:message>
+  <wsdl:message name="ChartDataService_getRynokChart_OutputMessage">
+    <wsdl:part name="parameters" element="getRynokChartResponse" />
+  </wsdl:message>
+  <wsdl:message name="ChartDataService_getGraphVyrabData_InputMessage">
+    <wsdl:part name="parameters" element="getGraphVyrabData" />
+  </wsdl:message>
+  <wsdl:message name="ChartDataService_getGraphVyrabData_OutputMessage">
+    <wsdl:part name="parameters" element="getGraphVyrabDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="ChartDataService_getPrognozNBFakt_InputMessage">
+    <wsdl:part name="parameters" element="getPrognozNBFakt" />
+  </wsdl:message>
+  <wsdl:message name="ChartDataService_getPrognozNBFakt_OutputMessage">
+    <wsdl:part name="parameters" element="getPrognozNBFaktResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ChartDataService">
+    <wsdl:operation name="getChartData">
+      <wsdl:input wsaw:Action="urn:ChartDataService/getChartData" message="ChartDataService_getChartData_InputMessage" />
+      <wsdl:output wsaw:Action="urn:ChartDataService/getChartDataResponse" message="ChartDataService_getChartData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getRynokChart">
+      <wsdl:input wsaw:Action="urn:ChartDataService/getRynokChart" message="ChartDataService_getRynokChart_InputMessage" />
+      <wsdl:output wsaw:Action="urn:ChartDataService/getRynokChartResponse" message="ChartDataService_getRynokChart_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getGraphVyrabData">
+      <wsdl:input wsaw:Action="urn:ChartDataService/getGraphVyrabData" message="ChartDataService_getGraphVyrabData_InputMessage" />
+      <wsdl:output wsaw:Action="urn:ChartDataService/getGraphVyrabDataResponse" message="ChartDataService_getGraphVyrabData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getPrognozNBFakt">
+      <wsdl:input wsaw:Action="urn:ChartDataService/getPrognozNBFakt" message="ChartDataService_getPrognozNBFakt_InputMessage" />
+      <wsdl:output wsaw:Action="urn:ChartDataService/getPrognozNBFaktResponse" message="ChartDataService_getPrognozNBFakt_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root xmlns="reportSchema.xsd">
+	<nameReport>Расходы</nameReport>
+	<items>
+		<item title="Расход"
+				mode="expr"
+				expr="'VotGES.GA1.Rasx_ace'+'VotGES.GA2.Rasx_ace'+'VotGES.GA3.Rasx_ace'+'VotGES.GA4.Rasx_ace'+'VotGES.GA5.Rasx_ace'+'VotGES.GA6.Rasx_ace'+'VotGES.GA7.Rasx_ace'+'VotGES.GA8.Rasx_ace'+'VotGES.GA9.Rasx_ace'+'VotGES.GA10.Rasx_ace'"
+				calculationBasis="cbTimeWeighted"
+				summariesType="asAverage" resultMode="avg" stringFormat="### ### ### ### ##0.##"></item>
+	</items>
+</root>

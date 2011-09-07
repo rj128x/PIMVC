@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ChartProperties>
+	<XAxisType>datetime</XAxisType>
+	<Series>
+		<ChartSerieProperties>
+			<SerieType>line</SerieType>
+			<TagName>gtp1Fakt</TagName>
+			<Title>ГТП1 Факт</Title>
+			<LineWidth>2</LineWidth>
+		</ChartSerieProperties>
+		<ChartSerieProperties>
+			<SerieType>line</SerieType>
+			<TagName>gtp1Plan</TagName>
+			<Title>ГТП1 план</Title>
+			<LineWidth>0</LineWidth>
+		</ChartSerieProperties>
+		<ChartSerieProperties>
+			<SerieType>line</SerieType>
+			<TagName>gtp2Fakt</TagName>
+			<Title>ГТП2 Факт</Title>
+			<LineWidth>2</LineWidth>
+		</ChartSerieProperties>
+		<ChartSerieProperties>
+			<SerieType>line</SerieType>
+			<TagName>gtp2Plan</TagName>
+			<Title>ГТП2 план</Title>
+			<LineWidth>0</LineWidth>
+		</ChartSerieProperties>
+		<ChartSerieProperties>
+			<SerieType>line</SerieType>
+			<TagName>gesFakt</TagName>
+			<Title>ГЭС Факт</Title>
+			<LineWidth>2</LineWidth>
+		</ChartSerieProperties>
+		<ChartSerieProperties>
+			<SerieType>line</SerieType>
+			<TagName>gesPlan</TagName>
+			<Title>ГЭС план</Title>
+			<LineWidth>0</LineWidth>
+		</ChartSerieProperties>
+	</Series>
+</ChartProperties>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/PILib.CustomReport" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/PILib.CustomReport" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="CustomReport">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="MainSection" nillable="true" type="tns:CustomReportSection" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CustomReport" nillable="true" type="tns:CustomReport" />
+  <xs:complexType name="CustomReportSection">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Children" nillable="true" type="tns:ArrayOfCustomReportSection" />
+      <xs:element minOccurs="0" name="FindString" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Title" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CustomReportSection" nillable="true" type="tns:CustomReportSection" />
+  <xs:complexType name="ArrayOfCustomReportSection">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CustomReportSection" nillable="true" type="tns:CustomReportSection" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCustomReportSection" nillable="true" type="tns:ArrayOfCustomReportSection" />
+  <xs:complexType name="CustomReportTags">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Tags" nillable="true" type="tns:ArrayOfCustomReportDataString" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CustomReportTags" nillable="true" type="tns:CustomReportTags" />
+  <xs:complexType name="ArrayOfCustomReportDataString">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CustomReportDataString" nillable="true" type="tns:CustomReportDataString" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCustomReportDataString" nillable="true" type="tns:ArrayOfCustomReportDataString" />
+  <xs:complexType name="CustomReportDataString">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AvgData" type="xs:boolean" />
+      <xs:element minOccurs="0" name="MaxData" type="xs:boolean" />
+      <xs:element minOccurs="0" name="MinData" type="xs:boolean" />
+      <xs:element minOccurs="0" name="TagName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TagTitle" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CustomReportDataString" nillable="true" type="tns:CustomReportDataString" />
+  <xs:complexType name="CustomReportStructure">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="SelectedTags" nillable="true" type="tns:ArrayOfCustomReportDataString" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CustomReportStructure" nillable="true" type="tns:CustomReportStructure" />
+</xs:schema>

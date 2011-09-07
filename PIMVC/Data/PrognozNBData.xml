@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root xmlns="reportSchema.xsd">
+	<nameReport>Расходы</nameReport>
+	<items>
+		<item id="rashodFakt"
+				title="Расход Факт"
+				mode="tag"
+				tagName="VotGES.GES.Rasx_sum"
+				calculationBasis="cbTimeWeighted"
+				summariesType="asAverage"
+				resultMode="avg"
+				toChart="true"></item>
+		<item id="nbFakt"
+				title="НБ Факт"
+				mode="tag"
+				tagName="VotGES.GES.NBavg"
+				calculationBasis="cbTimeWeighted"
+				summariesType="asAverage"
+				resultMode="avg"
+				toChart="true"></item>
+		<item id="vbFakt"
+				title="ВБ Факт"
+				mode="tag"
+				tagName="VotGES.GES.VBavg"
+				calculationBasis="cbTimeWeighted"
+				summariesType="asAverage"
+				resultMode="avg"
+				toChart="true"></item>
+		<item id="pFakt"
+				title="P Факт"
+				mode="tag"
+				tagName="VotGES.GES.Psum"
+				calculationBasis="cbTimeWeighted"
+				summariesType="asAverage"
+				resultMode="avg"
+				toChart="true"></item>
+		<item id="t"
+				title="T"
+				mode="tag"
+				tagName="VotGES.Ges.Tov"
+				calculationBasis="cbTimeWeighted"
+				summariesType="asAverage"
+				resultMode="avg"
+				toChart="true"></item>
+		<item id="naporFakt"
+				title="Напор факт"
+				mode="calc"
+				resultMode="avg"
+				toChart="true"></item>
+		<item id="rashodCalc"
+				title="Расход расч"
+				mode="calc"
+				resultMode="avg"
+				toChart="true"></item>
+
+	</items>
+</root>

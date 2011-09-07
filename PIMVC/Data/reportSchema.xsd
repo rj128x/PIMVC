@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="reportSchema"
+			  targetNamespace="reportSchema.xsd"
+			  elementFormDefault="qualified"
+			  xmlns="reportSchema.xsd"
+			  xmlns:mstns="reportSchema.xsd"
+			  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+>
+	<xs:element name="root">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="nameReport"
+								type="xs:string"
+								minOccurs="0"
+								maxOccurs="1"/>
+				<xs:element name="expReplace"
+								minOccurs="0"
+								maxOccurs="1">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="replace"
+											minOccurs="0"
+											maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:attribute name="key"
+													  type="xs:string"></xs:attribute>
+									<xs:attribute name="value"
+													  type="xs:string"></xs:attribute>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+
+				<xs:element name="items"
+								minOccurs="1"
+								maxOccurs="1"
+								type="ItemsType"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:complexType name="ItemsType">
+		<xs:sequence>
+			<xs:element name="item"
+							type="ItemType"
+							maxOccurs="unbounded"
+							minOccurs="0"></xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="ItemType">
+		<xs:sequence>
+			<xs:element name="items"
+							type="ItemsType"
+							minOccurs="0"
+							maxOccurs="1"/>
+		</xs:sequence>
+		<xs:attribute name="id"
+						  type="xs:string"
+						  use="optional"/>
+		<xs:attribute name="scaleDiv"
+						  type="xs:string"
+						  use="optional"/>
+		<xs:attribute name="scaleMult"
+						  type="xs:string"
+						  use="optional"/>
+		<xs:attribute name="expr"
+						  type="xs:string"
+						  use="optional"/>
+		<xs:attribute name="tagName"
+						  type="xs:string"
+						  use="optional"/>
+		<xs:attribute name="title"
+						  type="xs:string"
+						  use="optional"/>
+		<xs:attribute name="sampleInterval"
+						  type="xs:string"
+						  use="optional"/>
+		<xs:attribute name="opened"
+						  type="xs:boolean"
+						  use="optional"
+						  default="true"/>
+		<xs:attribute name="toChart"
+						  type="xs:boolean"
+						  use="optional"
+						  default="false"/>
+		<xs:attribute name="addMinutes"
+						  type="xs:int"
+						  use="optional"
+						  default="0"/>
+		<xs:attribute name="mode"
+						  use="optional">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="tag"/>
+					<xs:enumeration value="calc"/>
+					<xs:enumeration value="expr"/>
+					<xs:enumeration value="noVal"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="resultMode"
+						  use="optional">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="sum"/>
+					<xs:enumeration value="min"/>
+					<xs:enumeration value="max"/>
+					<xs:enumeration value="avg"/>
+					<xs:enumeration value="oper"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="calculationBasis"
+						  use="optional">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="cbTimeWeighted"/>
+					<xs:enumeration value="cbEventWeighted"/>
+					<xs:enumeration value="cbTimeWeightedContinuous"/>
+					<xs:enumeration value="cbTimeWeightedDiscrete"/>
+					<xs:enumeration value="cbEventWeightedExcludeMostRecentEvent"/>
+					<xs:enumeration value="cbEventWeightedExcludeEarliestEvent"/>
+					<xs:enumeration value="cbEventWeightedIncludeBothEnds"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="summariesType"
+						  use="optional">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="asTotal"/>
+					<xs:enumeration value="asMinimum"/>
+					<xs:enumeration value="asMaximum"/>
+					<xs:enumeration value="asStdDev"/>
+					<xs:enumeration value="asRange"/>
+					<xs:enumeration value="asAverage"/>
+					<xs:enumeration value="asPStdDev"/>
+					<xs:enumeration value="asCount"/>
+					<xs:enumeration value="asAll"/>
+					<xs:enumeration value="asMinMaxRange"/>
+					<xs:enumeration value="asTotalAndAvg"/>
+					<xs:enumeration value="asStdDevAndAvg"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="sampleType"
+						  use="optional">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="stInterval"/>
+					<xs:enumeration value="stRecordedValues"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="stringFormat"
+						  use="optional">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:enumeration id="point2"
+										 value="### ### ### ### ##0.##"/>
+					<xs:enumeration id="point0"
+										 value="### ### ### ### ##0"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:complexType>
+
+</xs:schema>

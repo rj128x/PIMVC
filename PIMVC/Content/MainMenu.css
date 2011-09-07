@@ -1,0 +1,41 @@
+﻿div#mainMenu
+{
+	position:absolute;
+	z-index:500;
+	margin:0px;
+	padding:0px;
+	width:400px;
+}
+
+div#mainMenu div
+{	
+	overflow:visible;
+}
+
+div#mainMenu a.buttonOpen1
+{
+	height:20px;
+	padding:2px;
+	width:100px;
+}
+
+div#mainMenu a.buttonOpen1 span.ui-button-text
+{
+	margin:0px;
+	padding:0px;
+	padding-left:22px;
+}
+
+div#mainMenu .ui-accordion-header
+{
+}
+
+div#mainMenu .ui-accordion-header a
+{
+}
+
+div#mainMenu div.ui-accordion-content
+{
+	padding:3px;
+	padding-left:10px;
+}

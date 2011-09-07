@@ -1,0 +1,24 @@
+﻿<configuration>
+    <system.serviceModel>
+        <bindings>
+            <customBinding>
+                <binding name="CustomBinding_ChartDataService">
+                    <binaryMessageEncoding />
+                    <httpTransport maxReceivedMessageSize="2147483647" maxBufferSize="2147483647" />
+                </binding>
+                <binding name="CustomBinding_CustomReportService">
+                    <binaryMessageEncoding />
+                    <httpTransport maxReceivedMessageSize="2147483647" maxBufferSize="2147483647" />
+                </binding>
+            </customBinding>
+        </bindings>
+        <client>
+            <endpoint address="http://localhost:8090/ChartDataService.svc"
+                binding="customBinding" bindingConfiguration="CustomBinding_ChartDataService"
+                contract="ChartDataServiceReference.ChartDataService" name="CustomBinding_ChartDataService" />
+            <endpoint address="http://localhost:8090/CustomReportService.svc"
+                binding="customBinding" bindingConfiguration="CustomBinding_CustomReportService"
+                contract="CustomReportService.CustomReportService" name="CustomBinding_CustomReportService" />
+        </client>
+    </system.serviceModel>
+</configuration>

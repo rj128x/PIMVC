@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ChartProperties>
+	<XAxisType>datetime</XAxisType>
+	<Series>
+		<ChartSerieProperties>
+			<SerieType>line</SerieType>
+			<TagName>pFakt</TagName>
+			<Title>P Факт</Title>
+			<LineWidth>2</LineWidth>
+			<Color>0-0-255</Color>
+			<Marker>false</Marker>
+			<Enabled>true</Enabled>
+			<YAxisIndex>2</YAxisIndex>
+		</ChartSerieProperties>
+		<ChartSerieProperties>
+			<SerieType>stepLine</SerieType>
+			<TagName>pbr</TagName>
+			<Title>ПБР</Title>
+			<LineWidth>1</LineWidth>
+			<Color>0-0-255</Color>
+			<Marker>false</Marker>
+			<Enabled>true</Enabled>
+			<YAxisIndex>2</YAxisIndex>
+		</ChartSerieProperties>
+
+		<ChartSerieProperties>
+			<SerieType>line</SerieType>
+			<TagName>rashodFakt</TagName>
+			<Title>Q Факт</Title>
+			<LineWidth>2</LineWidth>
+			<Color>0-255-0</Color>
+			<Marker>false</Marker>
+			<Enabled>false</Enabled>
+			<YAxisIndex>3</YAxisIndex>
+		</ChartSerieProperties>
+		<ChartSerieProperties>
+			<SerieType>line</SerieType>
+			<TagName>rashodAvgPrognoz</TagName>
+			<Title>Q Прогноз</Title>
+			<LineWidth>1</LineWidth>
+			<Color>0-255-0</Color>
+			<Marker>false</Marker>
+			<Enabled>false</Enabled>
+			<YAxisIndex>3</YAxisIndex>
+		</ChartSerieProperties>
+		<ChartSerieProperties>
+			<SerieType>line</SerieType>
+			<TagName>rashodCalc</TagName>
+			<Title>Q расч</Title>
+			<LineWidth>1</LineWidth>
+			<Color>0-255-0</Color>
+			<Marker>false</Marker>
+			<Enabled>false</Enabled>
+			<YAxisIndex>3</YAxisIndex>
+		</ChartSerieProperties>
+		
+		<ChartSerieProperties>
+			<SerieType>line</SerieType>
+			<TagName>nbFakt</TagName>
+			<Title>НБ Факт</Title>
+			<LineWidth>2</LineWidth>
+			<Color>255-0-0</Color>
+			<Marker>false</Marker>
+		</ChartSerieProperties>
+		<ChartSerieProperties>
+			<SerieType>line</SerieType>
+			<TagName>nbPrognoz</TagName>
+			<Title>НБ Прогноз</Title>
+			<LineWidth>1</LineWidth>
+			<Color>255-0-0</Color>
+			<Marker>false</Marker>
+		</ChartSerieProperties>
+
+		<ChartSerieProperties>
+			<SerieType>line</SerieType>
+			<TagName>vbFakt</TagName>
+			<Title>ВБ Факт</Title>
+			<LineWidth>2</LineWidth>
+			<Color>255-165-0</Color>
+			<Marker>false</Marker>
+			<Enabled>false</Enabled>
+			<YAxisIndex>1</YAxisIndex>
+		</ChartSerieProperties>
+		<ChartSerieProperties>
+			<SerieType>line</SerieType>
+			<TagName>t</TagName>
+			<Title>T</Title>
+			<LineWidth>1</LineWidth>
+			<Color>255-165-0</Color>
+			<Marker>false</Marker>
+			<Enabled>false</Enabled>
+			<YAxisIndex>4</YAxisIndex>
+		</ChartSerieProperties>
+
+		
+	</Series>
+
+	<Axes>
+		<ChartAxisProperties>
+			<Index>0</Index>
+			<Auto>true</Auto>
+			<Interval>0.1</Interval>
+		</ChartAxisProperties>
+		<ChartAxisProperties>
+			<Index>1</Index>
+			<Auto>true</Auto>
+			<Interval>0.01</Interval>
+		</ChartAxisProperties>
+		<ChartAxisProperties>
+			<Index>2</Index>
+			<Auto>true</Auto>
+			<Interval>100</Interval>
+		</ChartAxisProperties>
+		<ChartAxisProperties>
+			<Index>3</Index>
+			<Auto>true</Auto>
+			<Interval>500</Interval>
+		</ChartAxisProperties>
+		<ChartAxisProperties>
+			<Index>4</Index>
+			<Auto>true</Auto>
+			<Interval>2</Interval>
+		</ChartAxisProperties>
+	</Axes>
+</ChartProperties>

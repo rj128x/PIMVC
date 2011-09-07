@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ChartProperties>
+	<XAxisType>auto</XAxisType>
+	<Series>
+		<ChartSerieProperties>
+			<SerieType>bar</SerieType>
+			<TagName>otdacha</TagName>
+			<Title>Отдача</Title>
+		</ChartSerieProperties>
+		<ChartSerieProperties>
+			<SerieType>bar</SerieType>
+			<TagName>priem</TagName>
+			<Title>Прием</Title>
+			<YAxisIndex>1</YAxisIndex>
+		</ChartSerieProperties>
+	</Series>	
+</ChartProperties>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ChartProperties>
+	<XAxisType>datetime</XAxisType>
+	<Series>
+		<ChartSerieProperties>
+			<SerieType>stepLine</SerieType>
+			<TagName>otdP</TagName>
+			<Title>Отдача P</Title>
+		</ChartSerieProperties>
+	</Series>
+	<Series>
+		<ChartSerieProperties>
+			<SerieType>stepLine</SerieType>
+			<TagName>priemP</TagName>
+			<Title>Прием P</Title>
+			<YAxisIndex>1</YAxisIndex>
+		</ChartSerieProperties>
+	</Series>
+</ChartProperties>

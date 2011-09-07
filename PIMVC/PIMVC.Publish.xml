@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="D:\mvcSite" deleteExistingFiles="False" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Профиль1" publishMethod="FileSystem" replaceMatchingFiles="True" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="PIMVC.csproj.user" publishTime="07/07/2011 09:56:49" />
+    <file relUrl="Content/images/logo/votges.png" publishTime="05/30/2011 07:58:45" />
+    <file relUrl="Data/Charts/GeneratorsASUTPBar.xml" publishTime="05/30/2011 07:58:48" />
+    <file relUrl="Views/Home/ActiveXTrend.aspx" publishTime="05/30/2011 07:58:55" />
+    <file relUrl="TempData/Charts/9eb55eaa-5ee5-40ab-9884-0a9a5f729098.xml" publishTime="05/30/2011 14:46:16" />
+    <file relUrl="ClientBin/SilverChart.xap" publishTime="08/31/2011 09:03:07" />
+    <file relUrl="logs/pimvc_30_05_2011 8_18_00.txt" publishTime="05/30/2011 08:51:56" />
+    <file relUrl="TempData/Charts/7a350262-735b-4c84-8bb4-77db2935c530.xml" publishTime="05/30/2011 14:54:25" />
+    <file relUrl="Data/reportSchema.xsd" publishTime="05/30/2011 07:58:50" />
+    <file relUrl="Views/Home/ActiveX.aspx" publishTime="07/07/2011 08:09:47" />
+    <file relUrl="Content/images/main/3.jpg" publishTime="05/30/2011 07:58:46" />
+    <file relUrl="Content/images/toggle-collapse-light.png" publishTime="05/30/2011 07:58:47" />
+    <file relUrl="PDI/56at.pdi" publishTime="05/30/2011 07:58:50" />
+    <file relUrl="bin/PHPSerializationLibrary.dll" publishTime="12/14/2009 11:21:08" />
+    <file relUrl="clientaccesspolicy.xml" publishTime="05/30/2011 07:58:56" />
+    <file relUrl="Data/oil.xml" publishTime="05/30/2011 07:58:50" />
+    <file relUrl="logs/pimvc_30_05_2011 14_51_28.txt" publishTime="05/30/2011 14:52:46" />
+    <file relUrl="Content/jquery-ui-1.8.10.custom.css" publishTime="05/30/2011 07:58:48" />
+    <file relUrl="Scripts/jquery-ui-1.8.10.custom.min.js" publishTime="05/30/2011 07:58:55" />
+    <file relUrl="Views/Web.config" publishTime="05/30/2011 07:58:56" />
+    <file relUrl="bin/PIMVC.dll" publishTime="08/31/2011 09:03:00" />
+    <file relUrl="Data/CustomReport/report.xml" publishTime="05/30/2011 07:58:50" />
+    <file relUrl="Views/Rynok/IndexMonth.aspx" publishTime="05/30/2011 07:58:55" />
+    <file relUrl="Scripts/jquery.validate.js" publishTime="05/30/2011 07:58:55" />
+    <file relUrl="Controllers/RynokController.cs" publishTime="05/30/2011 07:58:48" />
+    <file relUrl="Content/images/main/night4.jpg" publishTime="05/30/2011 07:58:47" />
+    <file relUrl="Content/images/ui-bg_flat_0_aaaaaa_40x100.png" publishTime="05/30/2011 07:58:47" />
+    <file relUrl="logs/pimvc_02_06_2011 8_39_28.txt" publishTime="06/02/2011 08:39:55" />
+    <file relUrl="TempData/Charts/b2e0083b-dcdf-4ee7-87f0-a5dbbe2f1942.xml" publishTime="05/30/2011 14:54:25" />
+    <file relUrl="TempData/Charts/7752b640-3df3-4461-9753-58b909ba8e31.xml" publishTime="06/06/2011 15:50:18" />
+    <file relUrl="Scripts/MyScripts/pi.js" publishTime="05/30/2011 07:58:55" />
+    <file relUrl="Data/Charts/GeneratorsASUTP_Radar.xml" publishTime="05/30/2011 07:58:48" />
+    <file relUrl="bin/PILib.pdb" publishTime="08/31/2011 09:02:58" />
+    <file relUrl="PIMVC.csproj" publishTime="06/17/2011 15:26:53" />
+    <file relUrl="Views/Home/ReportDataVertNice.ascx" publishTime="05/30/2011 07:58:55" />
+    <file relUrl="Content/images/main/VotGEC_sent_2009.jpg" publishTime="05/30/2011 07:58:47" />
+    <file relUrl="Content/images/main/123.jpg" publishTime="05/30/2011 07:58:46" />
+    <file relUrl="Content/images/calendar.gif" publishTime="05/30/2011 07:58:45" />
+    <file relUrl="Views/Home/RynokBriefChart.ascx" publishTime="05/30/2011 07:58:55" />
+    <file relUrl="Scripts/MicrosoftAjax.js" publishTime="05/30/2011 07:58:55" />
+    <file relUrl="Content/images/ui-bg_flat_55_fbec88_40x100.png" publishTime="05/30/2011 07:58:47" />
+    <file relUrl="PDI/ГА-9 Виброконтроль.pdi" publishTime="05/30/2011 07:58:52" />
+    <file relUrl="Content/images/ui-bg_glass_85_dfeffc_1x400.png" publishTime="05/30/2011 07:58:47" />
+    <file relUrl="Data/Charts/graphVyrab.xml" publishTime="05/30/2011 07:58:49" />
+    <file relUrl="Data/GeneratorsSK.xml" publishTime="06/16/2011 09:04:34" />
+    <file relUrl="Views/Home/ReportData.ascx" publishTime="05/30/2011 07:58:55" />
+    <file relUrl="Models/PIReport/ReportChartModel.cs" publishTime="05/30/2011 07:58:50" />
+    <file relUrl="PDI/ГА-9 МНУ.pdi" publishTime="05/30/2011 07:58:52" />
+    <file relUrl="Content/MainMenu.css" publishTime="05/30/2011 07:58:45" />
+    <file relUrl="Scripts/jquery.treeTable.min.js" publishTime="05/30/2011 07:58:55" />
+    <file relUrl="Content/images/toggle-collapse-dark.png" publishTime="05/30/2011 07:58:47" />
+    <file relUrl="Content/images/main/2.jpg" publishTime="05/30/2011 07:58:46" />
+    <file relUrl="Content/images/ui-bg_inset-hard_100_87d2ee_1x100.png" publishTime="05/30/2011 07:58:47" />
+    <file relUrl="PDI/ГЭС Схема гидроагрегатов.pdi" publishTime="05/30/2011 07:58:54" />
+    <file relUrl="TempData/Charts/01f8d889-d446-4269-aa6e-4cdcf4ab9019.xml" publishTime="05/30/2011 14:46:16" />
+    <file relUrl="Scripts/MicrosoftMvcAjax.debug.js" publishTime="05/30/2011 07:58:55" />
+    <file relUrl="TempData/Charts/ebe5adb1-4269-4387-90db-b4830ccdb509.xml" publishTime="05/30/2011 14:54:00" />
+    <file relUrl="TempData/Charts/4ca02f3d-c631-48cf-a7fe-e660997d342c.xml" publishTime="05/30/2011 14:54:00" />
+    <file relUrl="TempData/Charts/83493bdc-369e-425b-954c-24cb582ddc55.xml" publishTime="05/30/2011 14:54:00" />
+    <file relUrl="Data/Charts/Lines.xml" publishTime="05/30/2011 07:58:49" />
+    <file relUrl="TempData/Charts/68b6738a-0560-4556-8af9-b5de84fc5a8d.xml" publishTime="05/30/2011 14:54:25" />
+    <file relUrl="Content/images/logo/osi.gif" publishTime="05/30/2011 07:58:45" />
+    <file relUrl="Content/images/item-pointer-mover.gif" publishTime="05/30/2011 07:58:45" />
+    <file relUrl="TempData/Charts/bbe4fcbb-1c85-4e32-a940-01f9f5d44276.xml" publishTime="06/06/2011 15:51:57" />
+    <file relUrl="Controllers/TestController.cs" publishTime="05/30/2011 07:58:48" />
+    <file relUrl="Controllers/PrognozNBController.cs" publishTime="05/30/2011 07:58:48" />
+    <file relUrl="Scripts/MicrosoftMvcAjax.js" publishTime="05/30/2011 07:58:55" />
+    <file relUrl="logs/pimvc_02_06_2011 8_34_36.txt" publishTime="06/02/2011 08:35:29" />
+    <file relUrl="Views/Home/ReportTabs.aspx" publishTime="05/30/2011 07:58:55" />
+    <file relUrl="PDI/vibrocopy.pdi" publishTime="05/30/2011 07:58:51" />
+    <file relUrl="Views/Home/ReportForm.ascx" publishTime="05/30/2011 07:58:55" />
+    <file relUrl="PDI/Главная схема ГЭС Перетоки.pdi" publishTime="05/30/2011 07:58:55" />
+    <file relUrl="Controllers/HomeController.cs" publishTime="06/17/2011 15:26:52" />
+    <file relUrl="Content/images/ui-icons_217bc0_256x240.png" publishTime="05/30/2011 07:58:48" />
+    <file relUrl="Content/images/ui-icons_cd0a0a_256x240.png" publishTime="05/30/2011 07:58:48" />
+    <file relUrl="logs/pimvc_30_05_2011 14_53_35.txt" publishTime="05/30/2011 14:54:44" />
+    <file relUrl="Content/images/main/4.jpg" publishTime="05/30/2011 07:58:46" />
+    <file relUrl="bin/ru/System.Web.Mvc.resources.dll" publishTime="03/29/2010 18:36:52" />
+    <file relUrl="Models/RynokModel.cs" publishTime="05/30/2011 07:58:50" />
+    <file relUrl="Scripts/jquery-1.4.4.min.js" publishTime="05/30/2011 07:58:55" />
+    <file relUrl="Data/Rynok.xml" publishTime="05/30/2011 07:58:50" />
+    <file relUrl="Global.asax" publishTime="05/30/2011 07:58:50" />
+    <file relUrl="Views/RashodHar/Index.aspx" publishTime="05/30/2011 07:58:55" />
+    <file relUrl="logs/pimvc_30_05_2011 14_44_03.txt" publishTime="05/30/2011 14:44:04" />
+    <file relUrl="Data/Charts/Rynok.xml" publishTime="06/06/2011 16:12:33" />
+    <file relUrl="Content/images/ui-icons_d8e7f3_256x240.png" publishTime="05/30/2011 07:58:48" />
+    <file relUrl="bin/log4net.dll" publishTime="03/30/2006 13:24:28" />
+    <file relUrl="Scripts/MicrosoftMvcValidation.js" publishTime="05/30/2011 07:58:55" />
+    <file relUrl="PDI/ГА-9 СХЕМА ГА.pdi" publishTime="05/30/2011 07:58:52" />
+    <file relUrl="bin/log4net.xml" publishTime="03/30/2006 13:24:28" />
+    <file relUrl="Views/GraphVyrab/GraphVyrabChart.ascx" publishTime="05/30/2011 07:58:55" />
+    <file relUrl="Web.config" publishTime="05/30/2011 08:52:46" />
+    <file relUrl="Data/GeneratorsASUTP.xml" publishTime="05/30/2011 16:29:05" />
+    <file relUrl="Views/Home/ReportNull.aspx" publishTime="05/30/2011 07:58:55" />
+    <file relUrl="Content/images/main/night5.jpg" publishTime="05/30/2011 07:58:47" />
+    <file relUrl="bin/System.Web.Mvc.dll" publishTime="02/17/2010 08:24:14" />
+    <file relUrl="TempData/Charts/f8991652-d4e3-447d-867e-d4a76205bdd7.xml" publishTime="06/06/2011 15:50:18" />
+    <file relUrl="Data/Charts/GeneratorsRadar.xml" publishTime="05/30/2011 07:58:49" />
+    <file relUrl="Data/Charts/GeneratorsBar.xml" publishTime="05/30/2011 07:58:48" />
+    <file relUrl="Properties/AssemblyInfo.cs" publishTime="05/30/2011 07:58:55" />
+    <file relUrl="Scripts/MyScripts/rynok.js" publishTime="05/30/2011 07:58:55" />
+    <file relUrl="Content/images/main/6.jpg" publishTime="05/30/2011 07:58:47" />
+    <file relUrl="Content/images/main/votges.jpg" publishTime="05/30/2011 07:58:47" />
+    <file relUrl="Content/images/ui-bg_glass_95_fef1ec_1x400.png" publishTime="05/30/2011 07:58:47" />
+    <file relUrl="Views/Home/ActiveXIT.aspx" publishTime="06/17/2011 15:26:10" />
+    <file relUrl="Content/images/main/123.gif" publishTime="05/30/2011 07:58:46" />
+    <file relUrl="Data/Charts/oil.xml" publishTime="05/30/2011 07:58:49" />
+    <file relUrl="logs/pimvc_06_06_2011 16_05_08.txt" publishTime="06/06/2011 16:13:47" />
+    <file relUrl="Data/Charts/LinesBar.xml" publishTime="05/30/2011 07:58:49" />
+    <file relUrl="Content/images/item-pointer.gif" publishTime="05/30/2011 07:58:45" />
+    <file relUrl="Views/Rynok/IndexKvartal.aspx" publishTime="05/30/2011 07:58:55" />
+    <file relUrl="Data/Charts/GeneratorsOtdachaPie.xml" publishTime="05/30/2011 07:58:49" />
+    <file relUrl="Views/Home/ActiveXGA9.aspx" publishTime="05/30/2011 07:58:55" />
+    <file relUrl="Views/Home/CustomReportForm.ascx" publishTime="05/30/2011 07:58:55" />
+    <file relUrl="Data/RynokSN.xml" publishTime="06/14/2011 08:17:08" />
+    <file relUrl="Web.Debug.config" publishTime="05/30/2011 07:58:56" />
+    <file relUrl="Views/Shared/LogOnUserControl.ascx" publishTime="05/30/2011 07:58:56" />
+    <file relUrl="logs/pimvc_30_05_2011 14_45_58.txt" publishTime="05/30/2011 14:46:36" />
+    <file relUrl="Models/PIReport/ReportModel.cs" publishTime="05/30/2011 07:58:50" />
+    <file relUrl="Data/Charts/RynokBrief.xml" publishTime="06/06/2011 16:12:09" />
+    <file relUrl="TempData/Charts/8f474ba7-bed9-43cf-a820-d251b9cfa1ee.xml" publishTime="06/06/2011 15:51:57" />
+    <file relUrl="Data/RynokBrief.xml" publishTime="05/30/2011 07:58:50" />
+    <file relUrl="Scripts/MicrosoftMvcValidation.debug.js" publishTime="05/30/2011 07:58:55" />
+    <file relUrl="Data/Peretok.xml" publishTime="05/30/2011 07:58:50" />
+    <file relUrl="Data/Lines.xml" publishTime="05/30/2011 07:58:50" />
+    <file relUrl="Data/GeneratorsASKUE.xml" publishTime="05/30/2011 07:58:50" />
+    <file relUrl="favicon.ico" publishTime="05/30/2011 07:58:56" />
+    <file relUrl="Content/images/ui-icons_469bdd_256x240.png" publishTime="05/30/2011 07:58:48" />
+    <file relUrl="Scripts/jquery.validate-vsdoc.js" publishTime="05/30/2011 07:58:55" />
+    <file relUrl="Views/Home/Index.aspx" publishTime="05/30/2011 07:58:55" />
+    <file relUrl="Views/Shared/Excel.Master" publishTime="05/30/2011 07:58:56" />
+    <file relUrl="Content/images/ui-icons_2e83ff_256x240.png" publishTime="05/30/2011 07:58:48" />
+    <file relUrl="Content/images/ui-bg_inset-hard_100_f5f8f9_1x100.png" publishTime="05/30/2011 07:58:47" />
+    <file relUrl="logs/pimvc_27_05_2011 22_23_19.txt" publishTime="05/30/2011 07:58:56" />
+    <file relUrl="Data/WaterNK.xml" publishTime="05/30/2011 07:58:50" />
+    <file relUrl="Data/Charts/GeneratorsLine.xml" publishTime="05/30/2011 07:58:49" />
+    <file relUrl="Controllers/GraphyrabController.cs" publishTime="05/30/2011 07:58:48" />
+    <file relUrl="Views/Home/About.aspx" publishTime="05/30/2011 07:58:55" />
+    <file relUrl="CustomReportService.svc" publishTime="05/30/2011 07:58:48" />
+    <file relUrl="Controllers/RashodHarController.cs" publishTime="05/30/2011 07:58:48" />
+    <file relUrl="logs/pimvc_14_06_2011 8_18_05.txt" publishTime="06/14/2011 08:18:05" />
+    <file relUrl="Global.asax.cs" publishTime="05/30/2011 07:58:50" />
+    <file relUrl="logs/pimvc_06_06_2011 16_19_17.txt" publishTime="06/06/2011 16:19:25" />
+    <file relUrl="TempData/Charts/a372ed32-a59a-4ec0-be0d-7e072ca81404.xml" publishTime="06/06/2011 15:51:57" />
+    <file relUrl="Content/addStyles.css" publishTime="05/30/2011 07:58:45" />
+    <file relUrl="Views/Home/ActiveXSchema.aspx" publishTime="07/07/2011 08:09:45" />
+    <file relUrl="Content/images/logo/votges.gif" publishTime="05/30/2011 07:58:45" />
+    <file relUrl="Silverlight.js" publishTime="05/30/2011 07:58:55" />
+    <file relUrl="Views/PrognozNB/Index.aspx" publishTime="05/30/2011 07:58:55" />
+    <file relUrl="Models/GraphVyrab.cs" publishTime="05/30/2011 07:58:50" />
+    <file relUrl="logs/pimvc_06_06_2011 15_49_29.txt" publishTime="06/06/2011 15:57:11" />
+    <file relUrl="TempData/Charts/368bdb5c-2540-4f4b-ba41-4bdc86673fa3.xml" publishTime="05/30/2011 14:46:16" />
+    <file relUrl="Helpers/AppHelper.cs" publishTime="05/30/2011 07:58:50" />
+    <file relUrl="Content/images/logo/osi.jpg" publishTime="05/30/2011 07:58:45" />
+    <file relUrl="Content/images/main/night3.jpg" publishTime="05/30/2011 07:58:47" />
+    <file relUrl="Content/jquery.treeTable.css" publishTime="05/30/2011 07:58:48" />
+    <file relUrl="PDI/Анализ трендов.PDI" publishTime="05/30/2011 07:58:52" />
+    <file relUrl="Models/PrognozNBModel.cs" publishTime="05/30/2011 07:58:50" />
+    <file relUrl="Views/Shared/Error.aspx" publishTime="05/30/2011 07:58:55" />
+    <file relUrl="ChartDataService.svc.cs" publishTime="05/30/2011 07:58:45" />
+    <file relUrl="Models/RashodHarModel.cs" publishTime="05/30/2011 07:58:50" />
+    <file relUrl="Scripts/jquery-1.4.1.min.js" publishTime="05/30/2011 07:58:55" />
+    <file relUrl="Data/PrognozNBData.xml" publishTime="05/30/2011 07:58:50" />
+    <file relUrl="Controllers/AccountController.cs" publishTime="05/30/2011 07:58:48" />
+    <file relUrl="bin/PIMVC.pdb" publishTime="08/31/2011 09:03:00" />
+    <file relUrl="Data/CustomReport/reportTest.xml" publishTime="05/30/2011 07:58:50" />
+    <file relUrl="Content/images/ui-bg_gloss-wave_55_5c9ccc_500x100.png" publishTime="05/30/2011 07:58:47" />
+    <file relUrl="Data/servers.xml" publishTime="05/30/2011 07:58:50" />
+    <file relUrl="Scripts/jquery-1.4.1.js" publishTime="05/30/2011 07:58:55" />
+    <file relUrl="Content/images/ui-bg_glass_75_d0e5f5_1x400.png" publishTime="05/30/2011 07:58:47" />
+    <file relUrl="logs/pimvc_30_05_2011 14_47_37.txt" publishTime="05/30/2011 14:51:30" />
+    <file relUrl="Content/images/main/5.jpg" publishTime="05/30/2011 07:58:46" />
+    <file relUrl="logs/pimvc_02_06_2011 8_59_27.txt" publishTime="06/02/2011 08:59:48" />
+    <file relUrl="Content/images/main/21.jpg" publishTime="03/28/2011 08:00:46" />
+    <file relUrl="Content/images/toggle-expand-dark.png" publishTime="05/30/2011 07:58:47" />
+    <file relUrl="Content/images/ui-icons_6da8d5_256x240.png" publishTime="05/30/2011 07:58:48" />
+    <file relUrl="PDI/ГА-9 ТВС.pdi" publishTime="05/30/2011 07:58:53" />
+    <file relUrl="Content/images/toggle-expand-light.png" publishTime="05/30/2011 07:58:47" />
+    <file relUrl="Scripts/jquery-1.4.1-vsdoc.js" publishTime="05/30/2011 07:58:55" />
+    <file relUrl="Scripts/MicrosoftAjax.debug.js" publishTime="05/30/2011 07:58:55" />
+    <file relUrl="Content/mainPage.css" publishTime="05/30/2011 07:58:48" />
+    <file relUrl="Content/images/main/night2.jpg" publishTime="05/30/2011 07:58:47" />
+    <file relUrl="Views/Home/ReportExcel.aspx" publishTime="05/30/2011 07:58:55" />
+    <file relUrl="Content/images/ui-bg_inset-hard_100_fcfdfd_1x100.png" publishTime="05/30/2011 07:58:47" />
+    <file relUrl="Data/RynokFakt.xml" publishTime="05/30/2011 07:58:50" />
+    <file relUrl="Scripts/easyTooltip.js" publishTime="05/30/2011 07:58:55" />
+    <file relUrl="PIMVC.Publish.xml" publishTime="08/31/2011 08:19:45" />
+    <file relUrl="logs/pimvc_30_05_2011 8_14_04.txt" publishTime="05/30/2011 08:16:39" />
+    <file relUrl="PDI/ГА-9 ЭГРК.pdi" publishTime="05/30/2011 07:58:54" />
+    <file relUrl="CustomReportService.svc.cs" publishTime="05/30/2011 07:58:48" />
+    <file relUrl="Content/images/ui-icons_f9bd01_256x240.png" publishTime="05/30/2011 07:58:48" />
+    <file relUrl="Views/Home/ChartView.ascx" publishTime="05/30/2011 07:58:55" />
+    <file relUrl="Views/Home/ReportString.ascx" publishTime="05/10/2011 13:26:55" />
+    <file relUrl="Data/testReport.xml" publishTime="05/30/2011 07:58:50" />
+    <file relUrl="Content/images/main/night.jpg" publishTime="05/30/2011 07:58:47" />
+    <file relUrl="bin/PILib.dll" publishTime="08/31/2011 09:02:58" />
+    <file relUrl="Data/VyrabFakt.xml" publishTime="05/30/2011 07:58:50" />
+    <file relUrl="Content/Site.css" publishTime="05/30/2011 07:58:45" />
+    <file relUrl="Data/Charts/prognozNBFakt.xml" publishTime="05/30/2011 08:21:14" />
+    <file relUrl="Content/images/main/1.jpg" publishTime="05/30/2011 07:58:46" />
+    <file relUrl="Content/images/logo/inda.gif" publishTime="05/30/2011 07:58:45" />
+    <file relUrl="Content/jquery-ui-1.8.11.custom.css" publishTime="05/30/2011 07:58:48" />
+    <file relUrl="ChartDataService.svc" publishTime="05/30/2011 07:58:45" />
+    <file relUrl="Scripts/jquery.validate.min.js" publishTime="05/30/2011 07:58:55" />
+    <file relUrl="logs/pimvc_30_05_2011 14_51_04.txt" publishTime="05/30/2011 14:51:04" />
+    <file relUrl="logs/pimvc_02_06_2011 8_58_00.txt" publishTime="06/02/2011 08:58:30" />
+    <file relUrl="Views/Home/Custom.aspx" publishTime="05/30/2011 07:58:55" />
+    <file relUrl="PDI/ГА-9 Термоконтроль.pdi" publishTime="05/30/2011 07:58:53" />
+    <file relUrl="Data/Charts/GeneratorsOtdachaPyramid.xml" publishTime="05/30/2011 07:58:49" />
+    <file relUrl="Data/Charts/LinesPie.xml" publishTime="05/30/2011 07:58:49" />
+    <file relUrl="Models/RynokKvartalModel.cs" publishTime="05/30/2011 07:58:50" />
+    <file relUrl="Views/GraphVyrab/Index.aspx" publishTime="05/30/2011 07:58:55" />
+    <file relUrl="Views/Shared/Site.Master" publishTime="06/17/2011 15:25:21" />
+    <file relUrl="bin/System.Web.Mvc.xml" publishTime="02/17/2010 08:22:24" />
+    <file relUrl="Images/calendar.gif" publishTime="05/30/2011 07:58:50" />
+    <file relUrl="Web.Release.config" publishTime="05/30/2011 07:58:56" />
+    <file relUrl="Content/images/logo/inda.jpg" publishTime="05/30/2011 07:58:45" />
+    <file relUrl="PDI/56at2.pdi" publishTime="05/30/2011 07:58:51" />
+  </publishProfile>
+</publishData>

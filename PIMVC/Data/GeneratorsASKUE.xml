@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root xmlns="reportSchema.xsd">
+	<nameReport>Генераторы (АСКУЭ)</nameReport>
+	<items>
+		<item mode="calc"
+				id="otdP"
+				title="Отдача P" opened="true" toChart="true">
+			<items>
+				<item mode="tag"
+						tagName="VOTGES.SUE.GA1.30.Out"
+						title="Генератор 1"
+						scaleDiv="2"
+						summariesType="asTotal"/>
+				<item mode="tag"
+						tagName="VOTGES.SUE.GA2.30.Out"
+						title="Генератор 2"
+						scaleDiv="2"
+						summariesType="asTotal"/>
+				<item mode="tag"
+						tagName="VOTGES.SUE.GA3.30.Out"
+						title="Генератор 3"
+						scaleDiv="2"
+						summariesType="asTotal"/>
+				<item mode="tag"
+						tagName="VOTGES.SUE.GA4.30.Out"
+						title="Генератор 4"
+						scaleDiv="2"
+						summariesType="asTotal"/>
+				<item mode="tag"
+						tagName="VOTGES.SUE.GA5.30.Out"
+						title="Генератор 5"
+						scaleDiv="2"
+						summariesType="asTotal"/>
+				<item mode="tag"
+						tagName="VOTGES.SUE.GA6.30.Out"
+						title="Генератор 6"
+						scaleDiv="2"
+						summariesType="asTotal"/>
+				<item mode="tag"
+						tagName="VOTGES.SUE.GA7.30.Out"
+						title="Генератор 7"
+						scaleDiv="2"
+						summariesType="asTotal"/>
+				<item mode="tag"
+						tagName="VOTGES.SUE.GA8.30.Out"
+						title="Генератор 8"
+						scaleDiv="2"
+						summariesType="asTotal"/>
+				<item mode="tag"
+						tagName="VOTGES.SUE.GA9.30.Out"
+						title="Генератор 9"
+						scaleDiv="2"
+						summariesType="asTotal"/>
+				<item mode="tag"
+						tagName="VOTGES.SUE.GA10.30.Out"
+						title="Генератор 10"
+						scaleDiv="2"
+						summariesType="asTotal"/>
+			</items>
+		</item>
+
+		<item mode="calc"
+				id="priemP"
+				title="Прием P" opened="true"  toChart="true">
+			<items>
+				<item mode="tag"
+						tagName="VOTGES.SUE.GA1.30.In"
+						title="Генератор 1"
+						scaleDiv="2"
+						summariesType="asTotal"/>
+				<item mode="tag"
+						tagName="VOTGES.SUE.GA2.30.In"
+						title="Генератор 2"
+						scaleDiv="2"
+						summariesType="asTotal"/>
+				<item mode="tag"
+						tagName="VOTGES.SUE.GA3.30.In"
+						title="Генератор 3"
+						scaleDiv="2"
+						summariesType="asTotal"/>
+				<item mode="tag"
+						tagName="VOTGES.SUE.GA4.30.In"
+						title="Генератор 4"
+						scaleDiv="2"
+						summariesType="asTotal"/>
+				<item mode="tag"
+						tagName="VOTGES.SUE.GA5.30.In"
+						title="Генератор 5"
+						scaleDiv="2"
+						summariesType="asTotal"/>
+				<item mode="tag"
+						tagName="VOTGES.SUE.GA6.30.In"
+						title="Генератор 6"
+						scaleDiv="2"
+						summariesType="asTotal"/>
+				<item mode="tag"
+						tagName="VOTGES.SUE.GA7.30.In"
+						title="Генератор 7"
+						scaleDiv="2"
+						summariesType="asTotal"/>
+				<item mode="tag"
+						tagName="VOTGES.SUE.GA8.30.In"
+						title="Генератор 8"
+						scaleDiv="2"
+						summariesType="asTotal"/>
+				<item mode="tag"
+						tagName="VOTGES.SUE.GA9.30.In"
+						title="Генератор 9"
+						scaleDiv="2"
+						summariesType="asTotal"/>
+				<item mode="tag"
+						tagName="VOTGES.SUE.GA10.30.In"
+						title="Генератор 10"
+						scaleDiv="2"
+						summariesType="asTotal"/>
+			</items>
+		</item>
+
+	</items>
+</root>

@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="PIMVC.ChartDataService" CodeBehind="ChartDataService.svc.cs" %>

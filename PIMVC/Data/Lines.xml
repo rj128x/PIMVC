@@ -1,0 +1,509 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root xmlns="reportSchema.xsd">
+	<nameReport>Перетоки</nameReport>
+	<items>
+		<item mode="calc"
+				id="otd_VL_110_6_220_500"
+				title="Отдача" opened="true"  toChart="true">
+			<items>
+				<item mode="calc"
+						id="otd_VL_110_6"
+						title="ВЛ110-6">
+					<items>
+						<item mode="calc"
+								id="otd_VL_110"
+								title="ВЛ110">
+							<items>
+								<item mode="tag"
+										tagName="VOTGES.SUE.110.Sve.30.Out"
+										title="ВЛ 110 Светлая"
+										scaleDiv="2"
+										summariesType="asTotal"/>
+								<item mode="tag"
+										tagName="VOTGES.SUE.110.Iva.30.Out"
+										title="ВЛ 110 Ивановка"
+										scaleDiv="2"
+										summariesType="asTotal"/>
+								<item mode="tag"
+										tagName="VOTGES.SUE.110.Kau.30.Out"
+										title="ВЛ 110 Каучук"
+										scaleDiv="2"
+										summariesType="asTotal"/>
+								<item mode="tag"
+										tagName="VOTGES.SUE.110.ChTec.30.Out"
+										title="ВЛ 110 ЧаТЭЦ"
+										scaleDiv="2"
+										summariesType="asTotal"/>
+								<item mode="tag"
+										tagName="VOTGES.SUE.110.Ber.30.Out"
+										title="ВЛ 110 Березовка"
+										scaleDiv="2"
+										summariesType="asTotal"/>
+								<item mode="tag"
+										tagName="VOTGES.SUE.110.KShT1.30.Out"
+										title="ВЛ 110 КШТ-1"
+										scaleDiv="2"
+										summariesType="asTotal"/>
+								<item mode="tag"
+										tagName="VOTGES.SUE.110.KShT2.30.Out"
+										title="ВЛ 110 КШТ-2"
+										scaleDiv="2"
+										summariesType="asTotal"/>
+								<item mode="tag"
+										tagName="VOTGES.SUE.110.Dub.30.Out"
+										title="ВЛ 110 Дубовая"
+										scaleDiv="2"
+										summariesType="asTotal"/>
+								<item mode="tag"
+										tagName="VOTGES.SUE.110.Vdz1.30.Out"
+										title="ВЛ 110 Водозабор-1"
+										scaleDiv="2"
+										summariesType="asTotal"/>
+								<item mode="tag"
+										tagName="VOTGES.SUE.110.Vdz2.30.Out"
+										title="ВЛ 110 Водозабор-2"
+										scaleDiv="2"
+										summariesType="asTotal"/>
+							</items>
+						</item>
+						<item mode="calc"
+								id="otd_KL_110"
+								title="КЛ110">
+							<items>
+								<item mode="tag"
+										tagName="VOTGES.SUE.6kv.Filt1.30.Out"
+										title="КЛ 6 Фильтр 1"
+										scaleDiv="2"
+										summariesType="asTotal"/>
+								<item mode="tag"
+										tagName="VOTGES.SUE.6kv.Filt2.30.Out"
+										title="КЛ 6 Фильтр 2"
+										scaleDiv="2"
+										summariesType="asTotal"/>
+								<item mode="tag"
+										tagName="VOTGES.SUE.6kv.Schl1.30.Out"
+										title="КЛ 6 Шлюз 1"
+										scaleDiv="2"
+										summariesType="asTotal"/>
+								<item mode="tag"
+										tagName="VOTGES.SUE.6kv.Schl2.30.Out"
+										title="КЛ 6 Шлюз 2"
+										scaleDiv="2"
+										summariesType="asTotal"/>
+							</items>
+						</item>
+					</items>
+				</item>
+				<item mode="calc"
+						id="otd_VL_220_500"
+						title="ВЛ220-500">
+					<items>
+						<item mode="calc"
+								id="otd_VL_220"
+								title="ВЛ220">
+							<items>
+								<item mode="tag"
+										tagName="VOTGES.SUE.220.Izh1.30.Out"
+										title="ВЛ 220 Ижевск-1"
+										scaleDiv="2"
+										summariesType="asTotal"/>
+								<item mode="tag"
+										tagName="VOTGES.SUE.220.Izh2.30.Out"
+										title="ВЛ 220 Ижевск-2"
+										scaleDiv="2"
+										summariesType="asTotal"/>
+								<item mode="tag"
+										tagName="VOTGES.SUE.220.Kau1.30.Out"
+										title="ВЛ 220 Каучук-1"
+										scaleDiv="2"
+										summariesType="asTotal"/>
+								<item mode="tag"
+										tagName="VOTGES.SUE.220.Kau2.30.Out"
+										title="ВЛ 220 Каучук-2"
+										scaleDiv="2"
+										summariesType="asTotal"/>
+								<item mode="tag"
+										tagName="VOTGES.SUE.220.Sve.30.Out"
+										title="ВЛ 220 Светлая"
+										scaleDiv="2"
+										summariesType="asTotal"/>
+							</items>
+						</item>
+						<item mode="calc"
+								id="otd_VL_500"
+								title="ВЛ 500">
+							<items>
+								<item mode="tag"
+										tagName="VOTGES.SUE.500.Eml.30.Out"
+										title="ВЛ 500 Емелино"
+										scaleDiv="2"
+										summariesType="asTotal"/>
+								<item mode="tag"
+										tagName="VOTGES.SUE.500.Kar.30.Out"
+										title="ВЛ 500 Карманово"
+										scaleDiv="2"
+										summariesType="asTotal"/>
+								<item mode="tag"
+										tagName="VOTGES.SUE.500.Vtk.30.Out"
+										title="ВЛ 500 Вятка"
+										scaleDiv="2"
+										summariesType="asTotal"/>
+							</items>
+						</item>
+					</items>
+				</item>
+			</items>
+		</item>
+
+		<item mode="calc"
+				id="priem_VL_110_6_220_500"
+				title="Прием" opened="true"  toChart="true">
+			<items>
+				<item mode="calc"
+						id="priem_VL_110_6"
+						title="ВЛ110-6">
+					<items>
+						<item mode="calc"
+								id="priem_VL_110"
+								title="ВЛ110">
+							<items>
+								<item mode="tag"
+										tagName="VOTGES.SUE.110.Sve.30.In"
+										title="ВЛ 110 Светлая"
+										scaleDiv="2"
+										summariesType="asTotal"/>
+								<item mode="tag"
+										tagName="VOTGES.SUE.110.Iva.30.In"
+										title="ВЛ 110 Ивановка"
+										scaleDiv="2"
+										summariesType="asTotal"/>
+								<item mode="tag"
+										tagName="VOTGES.SUE.110.Kau.30.In"
+										title="ВЛ 110 Каучук"
+										scaleDiv="2"
+										summariesType="asTotal"/>
+								<item mode="tag"
+										tagName="VOTGES.SUE.110.ChTec.30.In"
+										title="ВЛ 110 ЧаТЭЦ"
+										scaleDiv="2"
+										summariesType="asTotal"/>
+								<item mode="tag"
+										tagName="VOTGES.SUE.110.Ber.30.In"
+										title="ВЛ 110 Березовка"
+										scaleDiv="2"
+										summariesType="asTotal"/>
+								<item mode="tag"
+										tagName="VOTGES.SUE.110.KShT1.30.In"
+										title="ВЛ 110 КШТ-1"
+										scaleDiv="2"
+										summariesType="asTotal"/>
+								<item mode="tag"
+										tagName="VOTGES.SUE.110.KShT2.30.In"
+										title="ВЛ 110 КШТ-2"
+										scaleDiv="2"
+										summariesType="asTotal"/>
+								<item mode="tag"
+										tagName="VOTGES.SUE.110.Dub.30.In"
+										title="ВЛ 110 Дубовая"
+										scaleDiv="2"
+										summariesType="asTotal"/>
+								<item mode="tag"
+										tagName="VOTGES.SUE.110.Vdz1.30.In"
+										title="ВЛ 110 Водозабор-1"
+										scaleDiv="2"
+										summariesType="asTotal"/>
+								<item mode="tag"
+										tagName="VOTGES.SUE.110.Vdz2.30.In"
+										title="ВЛ 110 Водозабор-2"
+										scaleDiv="2"
+										summariesType="asTotal"/>
+							</items>
+						</item>
+						<item mode="calc"
+								id="priem_KL_110"
+								title="КЛ110">
+							<items>
+								<item mode="tag"
+										tagName="VOTGES.SUE.6kv.Filt1.30.In"
+										title="КЛ 6 Фильтр 1"
+										scaleDiv="2"
+										summariesType="asTotal"/>
+								<item mode="tag"
+										tagName="VOTGES.SUE.6kv.Filt2.30.In"
+										title="КЛ 6 Фильтр 2"
+										scaleDiv="2"
+										summariesType="asTotal"/>
+								<item mode="tag"
+										tagName="VOTGES.SUE.6kv.Schl1.30.In"
+										title="КЛ 6 Шлюз 1"
+										scaleDiv="2"
+										summariesType="asTotal"/>
+								<item mode="tag"
+										tagName="VOTGES.SUE.6kv.Schl2.30.In"
+										title="КЛ 6 Шлюз 2"
+										scaleDiv="2"
+										summariesType="asTotal"/>
+							</items>
+						</item>
+					</items>
+				</item>
+				<item mode="calc"
+						id="priem_VL_220_500"
+						title="ВЛ220-500">
+					<items>
+						<item mode="calc"
+								id="priem_VL_220"
+								title="ВЛ220">
+							<items>
+								<item mode="tag"
+										tagName="VOTGES.SUE.220.Izh1.30.In"
+										title="ВЛ 220 Ижевск-1"
+										scaleDiv="2"
+										summariesType="asTotal"/>
+								<item mode="tag"
+										tagName="VOTGES.SUE.220.Izh2.30.In"
+										title="ВЛ 220 Ижевск-2"
+										scaleDiv="2"
+										summariesType="asTotal"/>
+								<item mode="tag"
+										tagName="VOTGES.SUE.220.Kau1.30.In"
+										title="ВЛ 220 Каучук-1"
+										scaleDiv="2"
+										summariesType="asTotal"/>
+								<item mode="tag"
+										tagName="VOTGES.SUE.220.Kau2.30.In"
+										title="ВЛ 220 Каучук-2"
+										scaleDiv="2"
+										summariesType="asTotal"/>
+								<item mode="tag"
+										tagName="VOTGES.SUE.220.Sve.30.In"
+										title="ВЛ 220 Светлая"
+										scaleDiv="2"
+										summariesType="asTotal"/>
+							</items>
+						</item>
+						<item mode="calc"
+								id="priem_VL_500"
+								title="ВЛ 500">
+							<items>
+								<item mode="tag"
+										tagName="VOTGES.SUE.500.Eml.30.In"
+										title="ВЛ 500 Емелино"
+										scaleDiv="2"
+										summariesType="asTotal"/>
+								<item mode="tag"
+										tagName="VOTGES.SUE.500.Kar.30.In"
+										title="ВЛ 500 Карманово"
+										scaleDiv="2"
+										summariesType="asTotal"/>
+								<item mode="tag"
+										tagName="VOTGES.SUE.500.Vtk.30.In"
+										title="ВЛ 500 Вятка"
+										scaleDiv="2"
+										summariesType="asTotal"/>
+							</items>
+						</item>
+					</items>
+				</item>
+			</items>
+		</item>
+
+		<item mode="calc"
+				id="saldo_VL_110_6_220_500"
+				title="Сальдо" opened="true"  toChart="true">
+			<items>
+				<item mode="calc"
+						id="saldo_VL_110_6"
+						title="ВЛ110-6">
+					<items>
+						<item mode="calc"
+								id="saldo_VL_110"
+								title="ВЛ110">
+							<items>
+								<item mode="expr"
+										expr="'VOTGES.SUE.110.Sve.30.Out'-'VOTGES.SUE.110.Sve.30.In'"
+										id="110sve"
+										title="ВЛ 110 Светлая"
+										scaleDiv="2"
+										summariesType="asTotal"
+										sampleType="stRecordedValues"/>
+								<item mode="expr"
+										expr="'VotGES.SUE.110.Iva.30.Out'-'VOTGES.SUE.110.Iva.30.In'"
+										id="110iva"
+										title="ВЛ 110 Ивановка"
+										scaleDiv="2"
+										summariesType="asTotal"
+										sampleType="stRecordedValues"/>
+								<item mode="expr"
+										expr="'VotGES.SUE.110.Kau.30.Out'-'VOTGES.SUE.110.Kau.30.In'"
+										id="110kau"
+										title="ВЛ 110 Каучук"
+										scaleDiv="2"
+										summariesType="asTotal"
+										sampleType="stRecordedValues"/>
+								<item mode="expr"
+										expr="'VotGES.SUE.110.ChTec.30.Out'-'VOTGES.SUE.110.ChTec.30.In'"
+										id="110chTec"
+										title="ВЛ 110 ЧаТЭЦ"
+										scaleDiv="2"
+										summariesType="asTotal"
+										sampleType="stRecordedValues"/>
+								<item mode="expr"
+										expr="'VotGES.SUE.110.Ber.30.Out'-'VOTGES.SUE.110.Ber.30.In'"
+										id="110ber"
+										title="ВЛ 110 Березовка"
+										scaleDiv="2"
+										summariesType="asTotal"
+										sampleType="stRecordedValues"/>
+								<item mode="expr"
+										expr="'VotGES.SUE.110.KShT1.30.Out'-'VOTGES.SUE.110.KShT1.30.In'"
+										id="110ksht1"
+										title="ВЛ 110 КШТ-1"
+										scaleDiv="2"
+										summariesType="asTotal"
+										sampleType="stRecordedValues"/>
+								<item mode="expr"
+										expr="'VotGES.SUE.110.KShT2.30.Out'-'VOTGES.SUE.110.KShT2.30.In'"
+										id="110ksht2"
+										title="ВЛ 110 КШТ-2"
+										scaleDiv="2"
+										summariesType="asTotal"
+										sampleType="stRecordedValues"/>
+								<item mode="expr"
+										expr="'VotGES.SUE.110.Dub.30.Out'-'VOTGES.SUE.110.Dub.30.In'"
+										id="110dub"
+										title="ВЛ 110 Дубовая"
+										scaleDiv="2"
+										summariesType="asTotal"
+										sampleType="stRecordedValues"/>
+								<item mode="expr"
+										expr="'VotGES.SUE.110.Vdz1.30.Out'-'VOTGES.SUE.110.Vdz1.30.In'"
+										id="110vdz1"
+										title="ВЛ 110 Водозабор-1"
+										scaleDiv="2"
+										summariesType="asTotal"
+										sampleType="stRecordedValues"/>
+								<item mode="expr"
+										expr="'VotGES.SUE.110.Vdz2.30.Out'-'VOTGES.SUE.110.Vdz2.30.In'"
+										id="110vdz2"
+										title="ВЛ 110 Водозабор-2"
+										scaleDiv="2"
+										summariesType="asTotal"
+										sampleType="stRecordedValues"/>
+							</items>
+						</item>
+						<item mode="calc"
+								id="saldo_KL_110"
+								title="КЛ110">
+							<items>
+								<item mode="expr"
+										expr="'VotGES.SUE.6kv.Filt1.30.Out'-'VOTGES.SUE.6kv.Filt1.30.In'"
+										id="6filtr1"
+										title="КЛ 6 Фильтр 1"
+										scaleDiv="2"
+										summariesType="asTotal"
+										sampleType="stRecordedValues"/>
+								<item mode="expr"
+										expr="'VotGES.SUE.6kv.Filt2.30.Out'-'VOTGES.SUE.6kv.Filt2.30.In'"
+										id="6filtr2"
+										title="КЛ 6 Фильтр 2"
+										scaleDiv="2"
+										summariesType="asTotal"
+										sampleType="stRecordedValues"/>
+								<item mode="expr"
+										expr="'VotGES.SUE.6kv.Schl1.30.Out'-'VOTGES.SUE.6kv.Schl1.30.In'"
+										id="6schl1"
+										title="КЛ 6 Шлюз 1"
+										scaleDiv="2"
+										summariesType="asTotal"
+										sampleType="stRecordedValues"/>
+								<item mode="expr"
+										expr="'VotGES.SUE.6kv.Schl2.30.Out'-'VOTGES.SUE.6kv.Schl2.30.In'"
+										id="6schl2"
+										title="КЛ 6 Шлюз 2"
+										scaleDiv="2"
+										summariesType="asTotal"
+										sampleType="stRecordedValues"/>
+							</items>
+						</item>
+					</items>
+				</item>
+				<item mode="calc"
+						id="saldo_VL_220_500"
+						title="ВЛ220-500">
+					<items>
+						<item mode="calc"
+								id="saldo_VL_220"
+								title="ВЛ220">
+							<items>
+								<item mode="expr"
+										expr="'VotGES.SUE.220.Izh1.30.Out'-'VOTGES.SUE.220.Izh1.30.In'"
+										id="220izh1"
+										title="ВЛ 220 Ижевск-1"
+										scaleDiv="2"
+										summariesType="asTotal"
+										sampleType="stRecordedValues"/>
+								<item mode="expr"
+										expr="'VotGES.SUE.220.Izh2.30.Out'-'VOTGES.SUE.220.Izh2.30.In'"
+										id="220izh2"
+										title="ВЛ 220 Ижевск-2"
+										scaleDiv="2"
+										summariesType="asTotal"
+										sampleType="stRecordedValues"/>
+								<item mode="expr"
+										expr="'VotGES.SUE.220.Kau1.30.Out'-'VOTGES.SUE.220.Kau1.30.In'"
+										id="220kau1"
+										title="ВЛ 220 Каучук-1"
+										scaleDiv="2"
+										summariesType="asTotal"
+										sampleType="stRecordedValues"/>
+								<item mode="expr"
+										expr="'VotGES.SUE.220.Kau2.30.Out'-'VOTGES.SUE.220.Kau2.30.In'"
+										id="220kau2"
+										title="ВЛ 220 Каучук-2"
+										scaleDiv="2"
+										summariesType="asTotal"
+										sampleType="stRecordedValues"/>
+								<item mode="expr"
+										expr="'VotGES.SUE.220.Sve.30.Out'-'VOTGES.SUE.220.Sve.30.In'"
+										id="220sve"
+										title="ВЛ 220 Светлая"
+										scaleDiv="2"
+										summariesType="asTotal"
+										sampleType="stRecordedValues"/>
+							</items>
+						</item>
+						<item mode="calc"
+								id="saldo_VL_500"
+								title="ВЛ 500">
+							<items>
+								<item mode="expr"
+										expr="'VotGES.SUE.500.Eml.30.Out'-'VOTGES.SUE.500.Eml.30.In'"
+										id="500eml"
+										title="ВЛ 500 Емелино"
+										scaleDiv="2"
+										summariesType="asTotal"
+										sampleType="stRecordedValues"/>
+								<item mode="expr"
+										expr="'VotGES.SUE.500.Kar.30.Out'-'VOTGES.SUE.500.Kar.30.In'"
+										id="500kar"
+										title="ВЛ 500 Карманово"
+										scaleDiv="2"
+										summariesType="asTotal"
+										sampleType="stRecordedValues"/>
+								<item mode="expr"
+										expr="'VotGES.SUE.500.Vtk.30.Out'-'VOTGES.SUE.500.Vtk.30.In'"
+										id="500vtk"
+										title="ВЛ 500 Вятка"
+										scaleDiv="2"
+										summariesType="asTotal"
+										sampleType="stRecordedValues"/>
+							</items>
+						</item>
+					</items>
+				</item>
+			</items>
+		</item>
+
+	</items>
+</root>

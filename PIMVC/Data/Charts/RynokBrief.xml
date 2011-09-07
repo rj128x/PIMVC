@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ChartProperties>
+	<XAxisType>datetime</XAxisType>
+	<Series>
+		<ChartSerieProperties>
+			<SerieType>stepLine</SerieType>
+			<TagName>gtp1Plan</TagName>
+			<Title>ГТП1 план</Title>
+			<Color>0-255-0</Color>
+			<LineWidth>0</LineWidth>
+		</ChartSerieProperties>
+		<ChartSerieProperties>
+			<SerieType>stepLine</SerieType>
+			<TagName>gtp1Fakt</TagName>
+			<Title>ГТП1 Факт</Title>
+			<LineWidth>2</LineWidth>
+			<Color>0-255-0</Color>
+		</ChartSerieProperties>
+
+		<ChartSerieProperties>
+			<SerieType>stepLine</SerieType>
+			<TagName>gtp2Plan</TagName>
+			<Title>ГТП2 план</Title>
+			<Color>0-0-255</Color>
+			<LineWidth>0</LineWidth>
+		</ChartSerieProperties>
+		<ChartSerieProperties>
+			<SerieType>stepLine</SerieType>
+			<TagName>gtp2Fakt</TagName>
+			<Title>ГТП2 Факт</Title>
+			<LineWidth>2</LineWidth>
+			<Color>0-0-255</Color>
+		</ChartSerieProperties>
+
+		<ChartSerieProperties>
+			<SerieType>stepLine</SerieType>
+			<TagName>gesPlan</TagName>
+			<Title>ГЭС план</Title>
+			<Enabled>false</Enabled>
+			<Color>0-0-0</Color>
+			<LineWidth>0</LineWidth>
+		</ChartSerieProperties>
+		<ChartSerieProperties>
+			<SerieType>stepLine</SerieType>
+			<TagName>gesFakt</TagName>
+			<Title>ГЭС Факт</Title>
+			<LineWidth>2</LineWidth>
+			<Enabled>false</Enabled>
+			<Color>0-0-0</Color>
+		</ChartSerieProperties>		
+		
+	</Series>
+</ChartProperties>

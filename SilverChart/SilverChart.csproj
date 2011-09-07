@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{28B681E8-6293-4B7D-85E4-6E0E7BEB4857}</ProjectGuid>
+    <ProjectTypeGuids>{A1591282-1198-4647-A2B1-27E5FF5F6F3B};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SilverChart</RootNamespace>
+    <AssemblyName>SilverChart</AssemblyName>
+    <TargetFrameworkIdentifier>Silverlight</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+    <SilverlightApplication>true</SilverlightApplication>
+    <SupportedCultures>ru</SupportedCultures>
+    <XapOutputs>true</XapOutputs>
+    <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
+    <XapFilename>SilverChart.xap</XapFilename>
+    <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
+    <SilverlightAppEntry>SilverChart.App</SilverlightAppEntry>
+    <TestPageFileName>SilverChartTestPage.html</TestPageFileName>
+    <CreateTestPage>true</CreateTestPage>
+    <ValidateXaml>true</ValidateXaml>
+    <EnableOutOfBrowser>false</EnableOutOfBrowser>
+    <OutOfBrowserSettingsFile>Properties\OutOfBrowserSettings.xml</OutOfBrowserSettingsFile>
+    <UsePlatformExtensions>false</UsePlatformExtensions>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+    <LinkedServerProject>..\PIMVC\PIMVC.csproj</LinkedServerProject>
+  </PropertyGroup>
+  <!-- This property group is only here to support building this project using the 
+       MSBuild 3.5 toolset. In order to work correctly with this older toolset, it needs 
+       to set the TargetFrameworkVersion to v3.5 -->
+  <PropertyGroup Condition="'$(MSBuildToolsVersion)' == '3.5'">
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FJ.Core">
+      <HintPath>..\..\Libs\visifire368\Silverlight Binaries\FJ.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="mscorlib" />
+    <Reference Include="SLVisifire.Charts">
+      <HintPath>..\..\Libs\visifire368\Silverlight Binaries\SLVisifire.Charts.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations, Version=2.0.5.0, Culture=neutral, PublicKeyToken=ddd0da4d3e678217, processorArchitecture=MSIL" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.DomainServices.Client, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.ServiceModel.DomainServices.Client.Web, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.ServiceModel.Web.Extensions, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Windows" />
+    <Reference Include="system" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Windows.Controls, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="System.Windows.Controls.Data, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="System.Windows.Controls.Data.Input, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="System.Windows.Controls.Navigation, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="System.Windows.Data, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Windows.Browser" />
+    <Reference Include="Visiblox.Charts">
+      <HintPath>..\..\Libs\visibox\Visiblox.Charts.Silverlight\Visiblox.Charts.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ChartActions.cs" />
+    <Compile Include="DelegateCommand.cs" />
+    <Compile Include="GraphVyrabToolkit.xaml.cs">
+      <DependentUpon>GraphVyrabToolkit.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PBRData.cs" />
+    <Compile Include="PBREditorWindow.xaml.cs">
+      <DependentUpon>PBREditorWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\CustomReportService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="VisibilityConverter.cs" />
+    <Compile Include="VisiBloxChart\VisibloxChartAxis.cs" />
+    <Compile Include="VisiBloxChart\VisibloxChartSerie.cs" />
+    <Compile Include="VisiFireChart\SilverChartSerie.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\ChartDataServiceReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="VisiFireChart\SilverChartControl.cs" />
+    <Compile Include="VisiFireChart\SilverChartSerieTypes.cs" />
+    <Compile Include="VisiFireChart.xaml.cs">
+      <DependentUpon>VisiFireChart.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="VisiBloxChart\VisibloxChartControl.cs" />
+    <Compile Include="VisibloxChart.xaml.cs">
+      <DependentUpon>VisibloxChart.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PrognozNB.xaml.cs">
+      <DependentUpon>PrognozNB.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CustomReportSettingsControl.xaml.cs">
+      <DependentUpon>CustomReportSettingsControl.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </ApplicationDefinition>
+    <Page Include="GraphVyrabToolkit.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PBREditorWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="VisiFireChart.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="VisibloxChart.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PrognozNB.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="CustomReportSettingsControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ChartDataServiceReference\ChartDataService.wsdl" />
+    <None Include="Service References\ChartDataServiceReference\ChartDataService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ChartDataServiceReference\ChartDataService1.wsdl" />
+    <None Include="Service References\ChartDataServiceReference\ChartDataService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ChartDataServiceReference\ChartDataService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ChartDataServiceReference\ChartDataService3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ChartDataServiceReference\ChartDataService5.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ChartDataServiceReference\ChartDataService6.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CustomReportService\configuration91.svcinfo" />
+    <None Include="Service References\CustomReportService\configuration.svcinfo" />
+    <None Include="Service References\CustomReportService\CustomReportService2.wsdl" />
+    <None Include="Service References\CustomReportService\CustomReportService3.wsdl" />
+    <None Include="Service References\CustomReportService\CustomReportService4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CustomReportService\CustomReportService5.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CustomReportService\CustomReportService6.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CustomReportService\CustomReportService7.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CustomReportService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\ChartDataServiceReference\ChartDataService.disco" />
+    <None Include="Service References\CustomReportService\CustomReportService1.disco" />
+    <Content Include="SilverChartTestPage.html" />
+    <Content Include="Silverlight.js" />
+    <None Include="Properties\AppManifest.xml" />
+    <Content Include="ServiceReferences.ClientConfig" />
+    <None Include="Service References\ChartDataServiceReference\SilverChart.ChartDataServiceReference.ChartAnswer.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChartDataServiceReference\SilverChart.ChartDataServiceReference.GraphVyrabAnswer.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ChartDataServiceReference\SilverChart.ChartDataServiceReference.PrognozNBAnswer.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CustomReportService\SilverChart.CustomReportService.CustomReport.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CustomReportService\SilverChart.CustomReportService.CustomReportStructure.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CustomReportService\SilverChart.CustomReportService.CustomReportTags.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\ChartDataServiceReference\" />
+    <WCFMetadataStorage Include="Service References\CustomReportService\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ChartDataServiceReference\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ChartDataServiceReference\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ChartDataServiceReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="CustomReport\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Silverlight\$(SilverlightVersion)\Microsoft.Silverlight.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{A1591282-1198-4647-A2B1-27E5FF5F6F3B}">
+        <SilverlightProjectProperties />
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

@@ -1,0 +1,150 @@
+﻿/*----------------------------------------------------------
+Базовым цветом для этого шаблона является #5c87b2. 
+Для использования другого цвета замените все вхождения 
+#5c87b2 новым значением.
+----------------------------------------------------------*/
+html {
+  height: 100%;
+}
+
+body
+{
+    background-color: #5c87b2;
+    font-size: .75em;
+    font-family: Verdana, Helvetica, Sans-Serif;
+    margin: 0;
+    padding: 0;
+    color: #696969;
+    height:100%;
+}
+
+a:link
+{
+    color: #034af3;
+    text-decoration: underline;
+}
+a:visited
+{
+    color: #505abc;
+}
+a:hover
+{
+    color: #1d60ff;
+    text-decoration: none;
+}
+a:active
+{
+    color: #12eb87;
+}
+
+p, ul
+{
+    margin-bottom: 20px;
+    line-height: 1.6em;
+}
+
+/* ЗАГОЛОВКИ   
+----------------------------------------------------------*/
+h1, h2, h3, h4, h5, h6
+{
+    font-size: 1.5em;
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    margin:2px;
+    padding:0px;
+}
+
+h1
+{
+    font-size: 2em;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+h2
+{
+    padding: 0 0 10px 0;
+}
+h3
+{
+    font-size: 1.2em;
+}
+h4
+{
+    font-size: 1.1em;
+}
+h5, h6
+{
+    font-size: 1em;
+}
+
+/* теги <h2> стилей этого правила, которые являются 
+первым дочерним элементом левого и правого столбцов таблицы */
+.rightColumn > h1, .rightColumn > h2, .leftColumn > h1, .leftColumn > h2
+{
+    margin-top: 0;
+}
+----------------------------------------------------------*/
+
+fieldset 
+{
+    margin: 1em 0;
+    padding: 1em;
+    border: 1px solid #CCC;
+}
+
+fieldset p 
+{
+    margin: 2px 12px 10px 10px;
+}
+
+legend 
+{
+    font-size: 1.1em;
+    font-weight: 600;
+    padding: 2px 4px 8px 4px;
+}
+
+input[type="text"] 
+{
+    border: 1px solid #CCC;
+}
+
+input[type="password"] 
+{
+    border: 1px solid #CCC;
+}
+
+/* ТАБЛИЦА
+----------------------------------------------------------*/
+
+table 
+{
+  border: solid 1px #e8eef4;
+  border-collapse: collapse;
+}
+
+table td 
+{
+  padding: 1px;   
+  border: solid 1px #e8eef4;
+}
+
+table th, table td.header
+{
+  padding:1px;
+  text-align: left;
+  background-color: #e8eef4; 
+  border: solid 1px White;   
+  font-weight: bold;
+  text-align:center;
+}
+
+table td.treeHeader
+{
+	padding-left:20px;
+}
+
+tr.hasChilds td.treeHeader
+{
+	color:#0078AF;
+}

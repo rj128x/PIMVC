@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomReport xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+				  xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<MainSection>
+		<FindString>tag='*'</FindString>
+		<Title>Все тэги</Title>
+		<Children>
+			<CustomReportSection>
+				<Title>Все тэги</Title>
+				<FindString>tag='*'</FindString>
+			</CustomReportSection>
+			<CustomReportSection>
+				<Title>ГА</Title>
+				<FindString>tag='*sinu*'</FindString>
+				<Children >
+					<CustomReportSection>
+						<Title>ГА-9</Title>
+						<FindString>tag='*LEVEL*'</FindString>
+					</CustomReportSection>
+				</Children>
+			</CustomReportSection>
+			<CustomReportSection>
+				<Title>АСКУЭ, АСТУЭ</Title>
+				<FindString>tag='*TEMP*'</FindString>
+				<Children >
+					<CustomReportSection>
+						<Title>АСКУЭ 30</Title>
+						<FindString>tag='*TEMP*'</FindString>
+					</CustomReportSection>
+					<CustomReportSection>
+						<Title>АСКУЭ 1</Title>
+						<FindString>tag='*sin*'</FindString>
+					</CustomReportSection>
+				</Children>
+			</CustomReportSection>
+		</Children>
+	</MainSection>
+</CustomReport>

@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root xmlns="reportSchema.xsd">
+	<nameReport>График работы</nameReport>
+	<items>
+		<item id="gtp1Plan"
+				title="Факт"
+				mode="tag"
+				tagName="VotGES.SUE.PBR.110.1.In"
+				calculationBasis="cbTimeWeighted"
+				summariesType="asAverage"
+				sampleInterval="1m"
+				sampleType="stInterval"
+				toChart="true"></item>
+		<item id="gtp1Fakt"
+				title="Факт"
+				mode="tag"
+				tagName="VotGES.SUE.GTP.110.1.In"
+				calculationBasis="cbTimeWeighted"
+				summariesType="asAverage"
+				sampleInterval="1m"
+				sampleType="stInterval"  toChart="true"></item>
+		<item id="gtp2Plan"
+				title="Факт"
+				mode="tag"
+				tagName="VotGES.SUE.PBR.220.1.In"
+				calculationBasis="cbTimeWeighted"
+				summariesType="asAverage"
+				sampleInterval="1m"
+				sampleType="stInterval"
+				toChart="true"></item>
+		<item id="gtp2Fakt"
+				title="Факт"
+				mode="tag"
+				tagName="VotGES.SUE.GTP.220.1.In"
+				calculationBasis="cbTimeWeighted"
+				summariesType="asAverage"
+				sampleInterval="1m"
+				sampleType="stInterval"  toChart="true"></item>		
+		<item id="gesPlan"
+				title="Факт"
+				mode="tag"
+				tagName="VotGES.SUE.PBR.GES.1.In"
+				calculationBasis="cbTimeWeighted"
+				summariesType="asAverage"
+				sampleInterval="1m"
+				sampleType="stInterval"
+				toChart="true"></item>
+		<item id="gesFakt"
+				title="Факт"
+				mode="tag"
+				tagName="VotGES.SUE.GTP.GES.1.In"
+				calculationBasis="cbTimeWeighted"
+				summariesType="asAverage"
+				sampleInterval="1m"
+				sampleType="stInterval"
+				toChart="true"></item>
+		
+	</items>
+</root>

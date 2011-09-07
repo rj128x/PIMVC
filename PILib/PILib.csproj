@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{16875CE6-7D51-41B6-9BC6-1D299C6C6D4C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PILib</RootNamespace>
+    <AssemblyName>PILib</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net">
+      <HintPath>..\..\Libs\log4net-1.2.10\bin\net\2.0\release\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="PHPSerializationLibrary">
+      <HintPath>..\..\Libs\PHPSer\PHPSerializationLibrary\PHPSerializationLibrary\bin\Release\PHPSerializationLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Web">
+      <Private>True</Private>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Chart\ChartAnswer.cs" />
+    <Compile Include="Chart\ChartAxisProperties.cs" />
+    <Compile Include="Chart\ChartData.cs" />
+    <Compile Include="Chart\ChartDataPoint.cs" />
+    <Compile Include="Chart\ChartDataSerie.cs" />
+    <Compile Include="Chart\ChartProperties.cs" />
+    <Compile Include="Chart\ChartSerieProperties.cs" />
+    <Compile Include="CustomReport\CustomReportSection.cs" />
+    <Compile Include="CustomReport\CustomReportStructure.cs" />
+    <Compile Include="Debug.cs" />
+    <Compile Include="Logger.cs" />
+    <Compile Include="nnet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>nnet.resx</DependentUpon>
+    </Compile>
+    <Compile Include="NNET\NNET.cs" />
+    <Compile Include="PBR\GraphVyrabAnswer.cs" />
+    <Compile Include="PBR\GraphVyrabData.cs" />
+    <Compile Include="PBR\PBRData.cs" />
+    <Compile Include="Piramida3000DataSet.cs">
+      <DependentUpon>Piramida3000DataSet.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Piramida3000DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Piramida3000DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PIReport\PIReaderData.cs" />
+    <Compile Include="PIReport\PIServerInfo.cs" />
+    <Compile Include="CustomReport\CustomReportTags.cs" />
+    <Compile Include="PIReport\Report.cs" />
+    <Compile Include="PIReport\ReportRequest.cs" />
+    <Compile Include="PIReport\ReportString.cs" />
+    <Compile Include="PIReport\ResultTag.cs" />
+    <Compile Include="PIReport\Tag.cs" />
+    <Compile Include="PIReport\TagInfo.cs" />
+    <Compile Include="PIReport\TagInfoCalc.cs" />
+    <Compile Include="PIReport\TagInfoExpr.cs" />
+    <Compile Include="PIReport\TagInfoPI.cs" />
+    <Compile Include="PIReport\TagInfoTag.cs" />
+    <Compile Include="PrognozNB\PrognozNB.cs" />
+    <Compile Include="PrognozNB\PrognozNBAnswer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Rashod\RashodTable.cs" />
+    <Compile Include="Reports\ReportGeneratorsASUTP.cs" />
+    <Compile Include="Reports\ReportLines.cs" />
+    <Compile Include="Reports\ReportGeneratorsASKUE.cs" />
+    <Compile Include="Reports\ReportPrognozNB.cs" />
+    <Compile Include="Reports\ReportRynok.cs" />
+    <Compile Include="rashods.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rashods.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ReportRynokSN.cs" />
+    <Compile Include="Settings.cs" />
+    <Compile Include="XMLSer\XMLSer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="nnet.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>nnet.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rashods.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>rashods.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Data\nnet\vges_nb.net" />
+    <None Include="Piramida3000DataSet.xsc">
+      <DependentUpon>Piramida3000DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Piramida3000DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Piramida3000DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Piramida3000DataSet.xss">
+      <DependentUpon>Piramida3000DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Data\rashods\1.csv" />
+    <None Include="Data\rashods\10.csv" />
+    <None Include="Data\rashods\2.csv" />
+    <None Include="Data\rashods\3.csv" />
+    <None Include="Data\rashods\4.csv" />
+    <None Include="Data\rashods\5.csv" />
+    <None Include="Data\rashods\6.csv" />
+    <None Include="Data\rashods\7.csv" />
+    <None Include="Data\rashods\8.csv" />
+    <None Include="Data\rashods\9.csv" />
+    <None Include="Data\rashods\avg.csv" />
+    <None Include="Data\rashods\opt.csv" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="PISDK">
+      <Guid>{0EE075CE-8C31-11D1-BD73-0060B0290178}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="PISDKCommon">
+      <Guid>{76A44786-EBC8-11D3-BDC5-00C04F779EB2}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="PITimeServer">
+      <Guid>{CB14968B-C3CA-11D3-BDBF-00C04F779EB2}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\nnet\vges_nb.txt" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

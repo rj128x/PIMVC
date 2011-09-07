@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ChartProperties>
+	<XAxisType>datetime</XAxisType>
+	<Series>
+		<ChartSerieProperties>
+			<SerieType>line</SerieType>
+			<TagName>saldo_VL_110_6_220_500</TagName>
+			<Title>Сальдо</Title>
+		</ChartSerieProperties>
+		<ChartSerieProperties>
+			<SerieType>line</SerieType>
+			<TagName>otd_VL_110_6_220_500</TagName>
+			<Title>Отдача</Title>
+		</ChartSerieProperties>
+		<ChartSerieProperties>
+			<SerieType>line</SerieType>
+			<TagName>priem_VL_110_6_220_500</TagName>
+			<Title>Прием</Title>
+		</ChartSerieProperties>
+	</Series>
+</ChartProperties>

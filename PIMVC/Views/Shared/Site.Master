@@ -1,0 +1,124 @@
+﻿<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server" >
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Expires" content="0">
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Cache-Control" content="no-cache">
+	<title>
+		<asp:ContentPlaceHolder ID="TitleContent" runat="server" />
+	</title>
+	<link href="<%=Url.Content("~/Content/Site.css")%>" rel="stylesheet" type="text/css" />
+	<link href="<%=Url.Content("~/Content/addStyles.css")%>" rel="stylesheet" type="text/css" />
+	<link href="<%=Url.Content("~/Content/MainMenu.css")%>" rel="stylesheet" type="text/css" />
+	<link href="<%=Url.Content("~/Content/jquery.treeTable.css")%>" rel="stylesheet" type="text/css" />
+	<link href="<%=Url.Content("~/Content/jquery-ui-1.8.11.custom.css")%>" rel="stylesheet" type="text/css" />
+	<script language="javascript" src="<%=Url.Content("~/Scripts/jquery-1.4.4.min.js")%>" type="text/javascript"></script>
+	<script language="javascript" src="<%=Url.Content("~/Scripts/jquery-ui-1.8.10.custom.min.js")%>"
+		type="text/javascript"></script>
+	<script language="javascript" src="<%=Url.Content("~/Scripts/easyTooltip.js")%>" type="text/javascript"></script>
+	<script language="javascript" src="<%=Url.Content("~/Scripts/jquery.treeTable.min.js")%>" type="text/javascript"></script>
+	<script language="javascript" src="<%=Url.Content("~/Scripts/MyScripts/pi.js")%>" type="text/javascript"></script>
+	<script language='javascript' type="text/javascript">
+		$(document).ready(function () {
+			pi = new PI();
+			pi.init();
+		})
+
+		function showMessage(message) {
+			alert(message);
+		}
+
+		function logMessage(message) {
+			console.log(message);
+		}
+
+		function changeQuery(query) {
+			$("#query").val(query);
+		}
+	</script>		
+</head>
+<body>
+	<div class="ui-tabs ui-widget ui-widget-content ui-corner-all">
+			<ul class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all">
+					<li class="ui-state-default ui-corner-top" style="float:left"><a id='btnMenu'>Меню</a></li>
+
+					<li class="ui-state-default ui-corner-top" style="float:right">
+						<%: Html.ActionLink("Домой", "Index", "Home")%></li>
+					<li class="ui-state-default ui-corner-top" style="float:right">
+						<%: Html.ActionLink("Мнемосхемы", "ActiveX", "Home")%></li>
+					<li class="ui-state-default ui-corner-top" style="float:right">
+						<%: Html.ActionLink("График нагрузки", "Index", "GraphVyrab")%></li>
+					<li class="ui-state-default ui-corner-top" style="float:right">
+						<%: Html.ActionLink("Прогноз НБ", "Index", "PrognozNB")%></li>
+					<li class="ui-state-default ui-corner-top" style="float:right">
+						<%: Html.ActionLink("Создать отчет", "Custom", "Home")%></li>
+				</ul>
+		<div id="main" class="fullScreen">
+			<div id='mainMenu' style="display:none;">		
+				<div>
+					<div class='accordion'>
+						<h3><a href="#">Отчеты</a></h3>
+						<div>
+							<div class='accordion'>
+								<h3><a href="#">АСКУЭ</a></h3>
+								<div >									
+									<%: Html.ActionLink("Генераторы", "GeneratorsASKUE", "Home",null, new { @class = "buttonOpen" })%>
+									<%: Html.ActionLink("Перетоки", "Lines", "Home", null, new { @class = "buttonOpen" })%>
+									<hr/>
+									<%: Html.ActionLink("График работы", "Rynok", "Home", null, new { @class = "buttonOpen" })%>
+									<%: Html.ActionLink("Собственные инициативы", "IndexMonth", "Rynok", null, new { @class = "buttonOpen" })%>
+								</div>
+								<h3><a href="#">АСУТП</a></h3>
+								<div>
+									<%: Html.ActionLink("Генераторы", "GeneratorsASUTP", "Home", null, new { @class = "buttonOpen" })%>
+								</div>
+								<h3><a href="#">Гидрология</a></h3>
+								<div>
+									<%: Html.ActionLink("Расходы", "WaterNK", "Home", null, new { @class = "buttonOpen" })%>
+								</div>
+							</div>
+						</div>
+						<h3><a href="#">Мнемосхемы</a></h3>
+						<div>
+							<%: Html.ActionLink("ГА №9", "ActiveXGA9", "Home", null, new { @class = "buttonOpen" })%>
+							<%: Html.ActionLink("Схема ГЭС", "ActiveXSchema", "Home", null, new { @class = "buttonOpen" })%>
+							<%: Html.ActionLink("Анализ трендов", "ActiveXTrend", "Home", null, new { @class = "buttonOpen" })%>
+                            <%: Html.ActionLink("ИТ Монитор", "ActiveXIT", "Home", null, new { @class = "buttonOpen" })%>
+							
+						</div>
+						<h3><a href="#">Вход</a></h3>
+						<div>
+							<%if (HttpContext.Current.User.Identity.IsAuthenticated){%>
+								Вы вошли как <b><%=HttpContext.Current.User.Identity.Name %></b>
+								<%: Html.ActionLink("Выйти", "LogOut", "Account",null, new { @class = "button" })%>
+							<%} else{%>
+							<%using (Html.BeginForm("LogOn","Account")){%>
+							<table>
+								<tr>
+									<th>Имя</th>
+									<td><%=Html.TextBox("name")%></td>
+								</tr>
+								<tr>
+									<th>Пароль</th>
+									<td><%=Html.TextBox("password")%></td>
+								</tr>
+								<tr>
+									<th colspan='2' align="right">
+										<input type="submit" value='Войти' />
+									</th>
+								</tr>
+							</table>
+							<%} }%>
+						</div>
+					</div>
+				</div>
+			</div>	
+
+			<asp:ContentPlaceHolder ID="MainContent" runat="server" />
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomReport xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+				  xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<MainSection>
+		<FindString>tag='*'  and pointType=12</FindString>
+		<Title>Все тэги</Title>
+		<Children>
+			<CustomReportSection>
+				<Title>Все тэги</Title>
+				<FindString>tag='*' and pointType=12</FindString>
+			</CustomReportSection>
+			<CustomReportSection>
+				<Title>Генераторы</Title>
+				<FindString>tag='*VotGES.GA*.*' and pointType=12</FindString>
+				<Children >
+					<CustomReportSection>
+						<Title>ГА-1</Title>
+						<FindString>tag='*VotGES.GA1.*' and pointType=12</FindString>
+						<Children />
+					</CustomReportSection>
+					<CustomReportSection>
+						<Title>ГА-2</Title>
+						<FindString>tag='*VotGES.GA2*' and pointType=12</FindString>
+						<Children />
+					</CustomReportSection>
+					<CustomReportSection>
+						<Title>ГА-3</Title>
+						<FindString>tag='*VotGES.GA3*' and pointType=12</FindString>
+						<Children />
+					</CustomReportSection>
+					<CustomReportSection>
+						<Title>ГА-4</Title>
+						<FindString>tag='*VotGES.GA4*' and pointType=12</FindString>
+						<Children />
+					</CustomReportSection>
+					<CustomReportSection>
+						<Title>ГА-5</Title>
+						<FindString>tag='*VotGES.GA5*' and pointType=12</FindString>
+						<Children />
+					</CustomReportSection>
+					<CustomReportSection>
+						<Title>ГА-6</Title>
+						<FindString>tag='*VotGES.GA6*' and pointType=12</FindString>
+						<Children />
+					</CustomReportSection>
+					<CustomReportSection>
+						<Title>ГА-7</Title>
+						<FindString>tag='*VotGES.GA7*' and pointType=12</FindString>
+						<Children />
+					</CustomReportSection>
+					<CustomReportSection>
+						<Title>ГА-8</Title>
+						<FindString>tag='*VotGES.GA8*' and pointType=12</FindString>
+						<Children />
+					</CustomReportSection>
+					<CustomReportSection>
+						<Title>ГА-9</Title>
+						<FindString>tag='*VotGES.GA9*' and pointType=12</FindString>
+						<Children >
+							<CustomReportSection>
+								<Title>Вибрация</Title>
+								<FindString>tag='*VotGES.GA9.BN*' and pointType=12</FindString>
+								<Children />
+							</CustomReportSection>
+							<CustomReportSection>
+								<Title>EGRK</Title>
+								<FindString>tag='*VotGES.GA9.EGRK*' and pointType=12</FindString>
+								<Children />
+							</CustomReportSection>
+							<CustomReportSection>
+								<Title>ГП</Title>
+								<FindString>tag='*VotGES.GA9.GP*' and pointType=12</FindString>
+								<Children />
+							</CustomReportSection>
+							<CustomReportSection>
+								<Title>ПП</Title>
+								<FindString>tag='*VotGES.GA9.PP*' and pointType=12</FindString>
+								<Children />
+							</CustomReportSection>
+							<CustomReportSection>
+								<Title>МНУ</Title>
+								<FindString>tag='*VotGES.GA9.MNU*' and pointType=12</FindString>
+								<Children />
+							</CustomReportSection>
+							<CustomReportSection>
+								<Title>Статор</Title>
+								<FindString>tag='*VotGES.GA9.Stator*' and pointType=12</FindString>
+								<Children />
+							</CustomReportSection>
+							<CustomReportSection>
+								<Title>ТВС</Title>
+								<FindString>tag='*VotGES.GA9.TVS*' and pointType=12</FindString>
+								<Children />
+							</CustomReportSection>
+						</Children>
+					</CustomReportSection>
+					<CustomReportSection>
+						<Title>ГА-10</Title>
+						<FindString>tag='*VotGES.GA10*' and pointType=12</FindString>
+						<Children />
+					</CustomReportSection>
+				</Children>
+			</CustomReportSection>
+			<CustomReportSection>
+				<Title>ГЭС</Title>
+				<FindString>tag='*VotGES.GES*' and pointType=12</FindString>
+				<Children />
+			</CustomReportSection>
+			<CustomReportSection>
+				<Title>Главные трансформаторы</Title>
+				<FindString>tag='*VotGES.GT*' and pointType=12</FindString>
+				<Children />
+			</CustomReportSection>
+			<CustomReportSection>
+				<Title>ОРУ</Title>
+				<FindString>tag='*VotGES.ORU*' and pointType=12</FindString>
+				<Children>
+					<CustomReportSection>
+						<Title>110 кВ</Title>
+						<FindString>tag='*VotGES.ORU110*' and pointType=12</FindString>
+						<Children />
+					</CustomReportSection>
+					<CustomReportSection>
+						<Title>220 кВ</Title>
+						<FindString>tag='*VotGES.ORU220*' and pointType=12</FindString>
+						<Children />
+					</CustomReportSection>
+					<CustomReportSection>
+						<Title>500 кВ</Title>
+						<FindString>tag='*VotGES.ORU500*' and pointType=12</FindString>
+						<Children />
+					</CustomReportSection>
+				</Children>
+			</CustomReportSection>
+			<CustomReportSection>
+				<Title>АСКУЭ, АСТУЭ</Title>
+				<FindString>tag='*VotGES.SUE*' and pointType=12</FindString>
+				<Children >
+					<CustomReportSection>
+						<Title>30мин</Title>
+						<FindString>tag='*VotGES.SUE*.30.*' and pointType=12</FindString>
+					</CustomReportSection>
+					<CustomReportSection>
+						<Title>1 мин</Title>
+						<FindString>tag='*VotGES.SUE*.1.*' and pointType=12</FindString>
+					</CustomReportSection>
+				</Children>
+			</CustomReportSection>
+			<CustomReportSection>
+				<Title>Выбранные тэги</Title>
+				<FindString>selected</FindString>
+			</CustomReportSection>
+		</Children>
+	</MainSection>
+</CustomReport>

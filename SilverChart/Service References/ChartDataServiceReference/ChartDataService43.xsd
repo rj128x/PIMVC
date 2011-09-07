@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/PILib.Chart" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/PILib.Chart" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ChartAnswer">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Data" nillable="true" type="tns:ChartData" />
+      <xs:element minOccurs="0" name="Properties" nillable="true" type="tns:ChartProperties" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ChartAnswer" nillable="true" type="tns:ChartAnswer" />
+  <xs:complexType name="ChartData">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Series" nillable="true" type="tns:ArrayOfChartDataSerie" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ChartData" nillable="true" type="tns:ChartData" />
+  <xs:complexType name="ArrayOfChartDataSerie">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ChartDataSerie" nillable="true" type="tns:ChartDataSerie" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfChartDataSerie" nillable="true" type="tns:ArrayOfChartDataSerie" />
+  <xs:complexType name="ChartDataSerie">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Points" nillable="true" type="tns:ArrayOfChartDataPoint" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ChartDataSerie" nillable="true" type="tns:ChartDataSerie" />
+  <xs:complexType name="ArrayOfChartDataPoint">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ChartDataPoint" nillable="true" type="tns:ChartDataPoint" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfChartDataPoint" nillable="true" type="tns:ArrayOfChartDataPoint" />
+  <xs:complexType name="ChartDataPoint">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="XDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="XVal" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="YVal" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ChartDataPoint" nillable="true" type="tns:ChartDataPoint" />
+  <xs:complexType name="ChartProperties">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Series" nillable="true" type="tns:ArrayOfChartSerieProperties" />
+      <xs:element minOccurs="0" name="XAxisType" type="tns:XAxisTypeEnum" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ChartProperties" nillable="true" type="tns:ChartProperties" />
+  <xs:complexType name="ArrayOfChartSerieProperties">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ChartSerieProperties" nillable="true" type="tns:ChartSerieProperties" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfChartSerieProperties" nillable="true" type="tns:ArrayOfChartSerieProperties" />
+  <xs:complexType name="ChartSerieProperties">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Enabled" type="xs:boolean" />
+      <xs:element minOccurs="0" name="SecondaryXAxis" type="xs:boolean" />
+      <xs:element minOccurs="0" name="SecondaryYAxis" type="xs:boolean" />
+      <xs:element minOccurs="0" name="SerieType" type="tns:ChartSerieType" />
+      <xs:element minOccurs="0" name="TagName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Title" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ChartSerieProperties" nillable="true" type="tns:ChartSerieProperties" />
+  <xs:simpleType name="ChartSerieType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="line" />
+      <xs:enumeration value="bar" />
+      <xs:enumeration value="pie" />
+      <xs:enumeration value="column" />
+      <xs:enumeration value="radar" />
+      <xs:enumeration value="stepLine" />
+      <xs:enumeration value="spline" />
+      <xs:enumeration value="quickLine" />
+      <xs:enumeration value="area" />
+      <xs:enumeration value="stackedArea" />
+      <xs:enumeration value="stackedArea100" />
+      <xs:enumeration value="stackedColumn" />
+      <xs:enumeration value="stackedColumn100" />
+      <xs:enumeration value="stackedBar" />
+      <xs:enumeration value="stackedBar100" />
+      <xs:enumeration value="doughnut" />
+      <xs:enumeration value="sectionFunnel" />
+      <xs:enumeration value="streamlineFunnel" />
+      <xs:enumeration value="pyramid" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="ChartSerieType" nillable="true" type="tns:ChartSerieType" />
+  <xs:simpleType name="XAxisTypeEnum">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="auto" />
+      <xs:enumeration value="datetime" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="XAxisTypeEnum" nillable="true" type="tns:XAxisTypeEnum" />
+</xs:schema>

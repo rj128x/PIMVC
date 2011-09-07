@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root xmlns="reportSchema.xsd">
+	<nameReport>Генераторы (АСКУЭ)</nameReport>
+	<items>
+		<item mode="calc"
+				id="otdP"
+				title="Отдача P" opened="true" toChart="true">
+			<items>
+				<item mode="tag"
+						tagName="VOTGES.SUE.500.2AT.30.Out"
+						title="2АТ 500 Отдача P"
+						scaleDiv="2"
+						summariesType="asTotal"/>
+				<item mode="tag"
+						tagName="VOTGES.SUE.500.3AT.30.Out"
+						title="3АТ 500 Отдача P"
+						scaleDiv="2"
+						summariesType="asTotal"/>
+				
+				<item mode="tag"
+						tagName="VOTGES.SUE.500.2AT.30.In"
+						title="2АТ 500 Прием P"
+						scaleDiv="2"
+						summariesType="asTotal"/>
+				<item mode="tag"
+						tagName="VOTGES.SUE.500.3AT.30.In"
+						title="3АТ 500 Прием P"
+						scaleDiv="2"
+						summariesType="asTotal"/>
+
+				<item mode="expr"
+						expr="abs('VOTGES.SUE.500.2AT.30.In'-'VOTGES.SUE.500.2AT.30.Out')"
+						title="Переток 2АТ 500"
+						summariesType="asTotal"
+						sampleType="stRecordedValues"/>
+				<item mode="expr"
+						expr="abs('VOTGES.SUE.500.3AT.30.In'-'VOTGES.SUE.500.3AT.30.Out')"
+						title="Переток 3АТ 500"
+						summariesType="asTotal"
+						sampleType="stRecordedValues"/>
+				<item mode="expr"
+						expr="abs('VOTGES.SUE.500.3AT.30.In'-'VOTGES.SUE.500.3AT.30.Out')+abs('VOTGES.SUE.500.2AT.30.In'-'VOTGES.SUE.500.2AT.30.Out')"
+						title="Переток 3АТ и 2АТ 500 Макс Абс"
+						summariesType="asMaximum"
+						sampleType="stRecordedValues"
+						resultMode="max"/>
+			</items>
+		</item>
+
+	</items>
+</root>

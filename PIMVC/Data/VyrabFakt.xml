@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root xmlns="reportSchema.xsd">
+	<nameReport>Рынок</nameReport>
+	<items>
+		<item id="gesFakt"
+				title="Факт"
+				mode="tag"
+				tagName="VotGES.SUE.GTP.GES.1.In"
+				calculationBasis="cbTimeWeightedDiscrete"
+				summariesType="asAverage"
+				sampleInterval="1m"
+				sampleType="stInterval"
+				toChart="true" resultMode="sum" addMinutes="-1"></item>
+	</items>
+</root>

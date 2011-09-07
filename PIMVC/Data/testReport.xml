@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root xmlns="reportSchema.xsd">
+	<nameReport>Генераторы (АСКУЭ)</nameReport>
+	<items>
+		<item mode="tag"
+				tagName="BA:LEVEL.1"
+				calculationBasis="cbTimeWeighted"
+				summariesType ="asTotal"
+				stringFormat="### ### ### ### ##0.##"/>
+		<item mode="tag"
+				tagName="BA:TEMP.1"
+				calculationBasis="cbTimeWeighted"
+				summariesType ="asTotal"
+				stringFormat="### ### ### ### ##0.##"/>
+		<item mode="tag"
+				tagName="CDEP158"
+				calculationBasis="cbTimeWeighted"
+				summariesType ="asTotal"
+				stringFormat="### ### ### ### ##0.##"/>
+		<item mode="tag"
+				tagName="CDT158"
+				calculationBasis="cbTimeWeighted"
+				summariesType ="asTotal"
+				stringFormat="### ### ### ### ##0.##"/>
+		<item mode="tag"
+				tagName="SINUSOID"
+				calculationBasis="cbTimeWeighted"
+				summariesType ="asTotal"
+				stringFormat="### ### ### ### ##0.##"/>
+		<item mode="tag"
+				tagName="SINUSOIDU"
+				calculationBasis="cbTimeWeighted"
+				summariesType ="asTotal"
+				stringFormat="### ### ### ### ##0.##"/>
+
+	</items>
+</root>

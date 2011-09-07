@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/PILib.PrognozNB" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/PILib.PrognozNB" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:8090/ChartDataService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/PILib.Chart" />
+  <xs:import schemaLocation="http://localhost:8090/ChartDataService.svc?xsd=xsd5" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:simpleType name="PrognozDataType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="PBRGekon" />
+      <xs:enumeration value="PBRUser" />
+      <xs:enumeration value="PFakt" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="PrognozDataType" nillable="true" type="tns:PrognozDataType" />
+  <xs:simpleType name="PrognozRashodCalcType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="avg" />
+      <xs:enumeration value="min" />
+      <xs:enumeration value="max" />
+      <xs:enumeration value="fakt" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="PrognozRashodCalcType" nillable="true" type="tns:PrognozRashodCalcType" />
+  <xs:complexType name="PrognozNBAnswer">
+    <xs:sequence>
+      <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/PILib.Chart" minOccurs="0" name="Chart" nillable="true" type="q1:ChartAnswer" />
+      <xs:element minOccurs="0" name="Date" type="xs:dateTime" />
+      <xs:element xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="PBR30" nillable="true" type="q2:ArrayOfKeyValueOfdateTimedouble" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PrognozNBAnswer" nillable="true" type="tns:PrognozNBAnswer" />
+</xs:schema>
